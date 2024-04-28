@@ -27,7 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-)o_ojh%i7*(hv3xzw+)9@-orv&^i(f7d=0)5^&&)yk!3w+y*f5"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['8000-dhardi-hoteljeri-q1sua6auz4.us1.codeanyapp.com',
 '.herokuapp.com']
@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    'rooms',
 ]
 
 MIDDLEWARE = [
@@ -87,6 +88,11 @@ WSGI_APPLICATION = "hotel_jeri.wsgi.application"
 DATABASES = {
     'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://*.codeanyapp.com",
+    "https://*.herokuapp.com"
+]
 
 
 # Password validation
