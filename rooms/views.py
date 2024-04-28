@@ -1,6 +1,10 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.views import generic
+from .models import Post
 
 # Create your views here.
-def rooms(request):
-    return HttpResponse("This would be the about page")
+
+class PostList(generic.ListView):
+    model = Post
+    template_name = 'post_list.html'  # Specify the template name
+    context_object_name = 'post_list'  # Specify the context object name
