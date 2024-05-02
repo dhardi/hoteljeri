@@ -6,5 +6,5 @@ from .models import Post
 
 class PostList(generic.ListView):
     model = Post
-    template_name = 'post_list.html'  # Specify the template name
-    context_object_name = 'post_list'  # Specify the context object name
+    template_name = "rooms/index.html"
+    
