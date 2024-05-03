@@ -40,14 +40,53 @@
 
                 </ul>
                 <span class="navbar-text text-muted">
-                    adventures of a software developer
+                    
                 </span>
             </div>
         </div>
     </nav>
 
     <main class="flex-shrink-0 main-bg">
-
+<!-- slide-->
+<div id="carouselExampleDark" class="carousel carousel-dark slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/bc/6a/c0/jericoacoara-ou-jeri.jpg?w=1200&h=1200&s=1" class="d-block w-50 mx-auto" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/10/2e/d9/jericoacoara.jpg?w=1200&h=-1&s=1" class="d-block w-50 mx-auto" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/31456806.jpg?k=a0e56c436e46b853442c536cc1c84b314a4d4ec5b287d0bfc68260fc00546309&o=&hp=1" class="d-block w-50 mx-auto" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!-- slide ends-->
         {% block content %}
         <!-- Content Goes here -->
         {% endblock content %}
@@ -55,37 +94,19 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer mt-auto py-3 dark-bg">
-        <div >
-            <h3 class="_14">Follow us on</h3>
-            
-            <ul class="hstack gap-3">
-              <li>
-                <a href="https://www.facebook.com" class="social-icon" target="_blank" aria-label="link to facebook" > <i class="fa fa-facebook"></i></a>
-              </li>
-              <li>
-                <a href="https://www.twitter.com" class="social-icon" target="_blank" aria-label="link to twitter"> <i class="fa fa-twitter"></i></a>
-              </li>
-              
-              <li>
-                <a href="https://www.youtube.com" class="social-icon" target="_blank" aria-label="link to youtube"> <i class="fa fa-youtube"></i></a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com" class="social-icon" target="_blank" aria-label="link to linkdin"> <i class="fa fa-linkedin"></i></a>
-              </li>
-              <li>
-                <a href="https://www.github.com" class="social-icon" target="_blank" aria-label="link to github"> <i class="fa fa-github"></i></a>
-              </li>
-            </ul>
-          </div>
-          
-        
-        
-        
-        
-        <p class="textfooter">
-        &copy; copyrights by Dhardi
-            </p>
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+          <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+        <span class="mb-3 mb-md-0 text-body-secondary">© 2024 by Dhardi, Inc</span>
+      </div>
+  
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-body-secondary" href="#"> <i class="fa fa-twitter"></i></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fa fa-facebook"></i></li>
+      </ul>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
