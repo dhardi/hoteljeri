@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     'rooms',
+    'bookings',
     'django_summernote',
 ]
 
@@ -62,7 +63,9 @@ ROOT_URLCONF = "hotel_jeri.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [TEMPLATES_DIR],
+        "DIRS": [TEMPLATES_DIR,
+                os.path.join(BASE_DIR, 'templates'),
+        ],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
