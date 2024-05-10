@@ -11,4 +11,5 @@ class PostList(generic.ListView):
 
 def index(request):
     rooms = Room.objects.all()
-    return render(request, 'appbooking.html', {'rooms': rooms})
+    print('rooms', rooms)
+    return render(request, 'bookings/appbooking.html', {'rooms': rooms})

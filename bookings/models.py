@@ -5,6 +5,7 @@ from django.utils import timezone
 class Room(models.Model):
     name = models.CharField(max_length=100)
     capacity = models.IntegerField()
+    image_url = models.URLField(blank=True)
  
 
 class Booking(models.Model):
@@ -17,3 +18,5 @@ class Booking(models.Model):
 
     def duration(self):
         return self.end_time - self.start_time
+
+
