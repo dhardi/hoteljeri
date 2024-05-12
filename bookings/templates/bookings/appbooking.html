@@ -1,25 +1,57 @@
 {% extends 'base.html' %}
-{% load static%}
+{% load static %}
 
 {% block content %}
 <!-- index.html content starts here -->
-<img id="roomImage" src="" alt="Room Image">
+<div>
+    <!--
+    <img id="roomImage" src="" alt="Room Image">
+    -->
+    <div class="container mt-5">
+        <div class="card">
+            <div class="row g-0">
+                <div class="col-md-8">
+                    <img src="" class="img-fluid rounded-start" id="roomImage" alt="Room Image">
+                </div>
+                <div class="col-md-4">
+                    <div class="row g-3" id="smallImagesContainer">
+                        <div class="col">
+                            <img src="" class="img-fluid rounded" id="smallImage1" alt="Small Image 1">
+                        </div>
+                        <div class="col">
+                            <img src="" class="img-fluid rounded" id="smallImage2" alt="Small Image 2">
+                        </div>
+                        <div class="col">
+                            <img src="" class="img-fluid rounded" id="smallImage3" alt="Small Image 3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <h1>Book a Room</h1>
 <form method="POST" action="{% url 'bookings' %}">
     {% csrf_token %}
-    <label for="room">Select Room:</label>
-    <select name="room" id="room">
+    <label for="room" class="form-label">Select Room:</label>
+    <select name="room" id="room" class="form-select mb-3">
         <option value="" selected disabled>Select a room</option> <!-- Placeholder option -->
         {% for room in rooms %}
-            <option value="{{ room.id }}" data-image-url="{{ room.image_url }}">{{ room.name }}</option>
+            <option value="{{ room.id }}"
+                    data-image-url="{{ room.image_url_main }}"
+                    data-small-image-1="{{ room.small_image_url_1 }}"
+                    data-small-image-2="{{ room.small_image_url_2 }}"
+                    data-small-image-3="{{ room.small_image_url_3 }}">
+                {{ room.name }}
+            </option>
         {% endfor %}
     </select>
-    <br><br>
-    <label for="start_time">Start Time:</label>
-    <input type="datetime-local" name="start_time" id="start_time"><br><br>
-    <label for="end_time">End Time:</label>
-    <input type="datetime-local" name="end_time" id="end_time"><br><br>
-    <button type="submit">Book Room</button>
+    <br>
+    <label for="start_time" class="form-label">Start Time:</label>
+    <input type="datetime-local" name="start_time" id="start_time" class="form-control mb-3">
+    <label for="end_time" class="form-label">End Time:</label>
+    <input type="datetime-local" name="end_time" id="end_time" class="form-control mb-3">
+    <button type="submit" class="btn btn-primary">Book Room</button>
 </form>
 {% block scripts %}
 <script src="{% static 'js/booking.js' %}"></script>
