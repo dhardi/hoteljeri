@@ -5,6 +5,8 @@ document.addEventListener('DOMContentLoaded', function() {
     var smallImage1 = document.getElementById('smallImage1');
     var smallImage2 = document.getElementById('smallImage2');
     var smallImage3 = document.getElementById('smallImage3');
+    var descriptionRoom = document.getElementById('descriptionR');
+    var priceNight = document.getElementById('priceNight');
 
     // Add event listener to the room select dropdown
     roomSelect.addEventListener('change', function() {
@@ -19,6 +21,9 @@ document.addEventListener('DOMContentLoaded', function() {
         var smallImageUrl2 = selectedOption.getAttribute('data-small-image-2');
         // Get the value of the data-small-image-3 attribute from the selected option
         var smallImageUrl3 = selectedOption.getAttribute('data-small-image-3');
+        // Get the description of the room
+        var description = selectedOption.getAttribute('description-room');
+        var priceRoommnight = selectedOption.getAttribute('price-night');
 
         // Set the src attribute of the room image element to the selected image URL
         roomImage.src = imageUrl;
@@ -26,9 +31,9 @@ document.addEventListener('DOMContentLoaded', function() {
         smallImage1.src = smallImageUrl1;
         smallImage2.src = smallImageUrl2;
         smallImage3.src = smallImageUrl3;
+        // Update the description of the room
+        descriptionRoom.textContent = description;
+        priceNight.textContent = priceRoommnight;
+
     });
 });
-
-console.log("Small Image URL 1:", smallImageUrl1);
-console.log("Small Image URL 2:", smallImageUrl2);
-console.log("Small Image URL 3:", smallImageUrl3);

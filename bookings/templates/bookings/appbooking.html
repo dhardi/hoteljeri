@@ -28,6 +28,15 @@
                 </div>
             </div>
         </div>
+        <p id = "descriptionR" ></p>
+        <br>
+        <p>Price per Night £<span id="priceNight"></span> </p>
+        <div>
+            <i class="fa-solid fa-wifi"></i>
+            <i class="fa-solid fa-mug-saucer"></i>
+            <i class="fa-solid fa-umbrella-beach"></i>
+            <i class="fa-solid fa-person-swimming"></i>
+        </div>
     </div>
 </div>
 <h1>Book a Room</h1>
@@ -41,7 +50,9 @@
                     data-image-url="{{ room.image_url_main }}"
                     data-small-image-1="{{ room.small_image_url_1 }}"
                     data-small-image-2="{{ room.small_image_url_2 }}"
-                    data-small-image-3="{{ room.small_image_url_3 }}">
+                    data-small-image-3="{{ room.small_image_url_3 }}"
+                    description-room ="{{room.description}}"
+                    price-night = "{{room.price_per_night}}">
                 {{ room.name }}
             </option>
         {% endfor %}
