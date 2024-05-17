@@ -17,9 +17,14 @@ class BookingForm(forms.Form):
 
         return cleaned_data
 
-    def save_booking(self):
+class BookingForm(forms.ModelForm):
+    class Meta:
+        model = Booking
+        fields = ['room', 'start_time', 'end_time']  # Replace with your actual fields
+
+    def save_booking(self, logged_in_user):
         room = self.cleaned_data['room']
         start_time = self.cleaned_data['start_time']
         end_time = self.cleaned_data['end_time']
-        booking = Booking.objects.create(room=room, start_time=start_time, end_time=end_time)
+        booking = Booking.objects.create(room=room, start_time=start_time, end_time=end_time, user=logged_in_user)
         return booking
