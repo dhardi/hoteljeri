@@ -24,4 +24,3 @@ class Booking(models.Model):
     def duration(self):
         return self.end_time - self.start_time
 
-
