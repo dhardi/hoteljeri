@@ -4,6 +4,8 @@ from .models import Room, Booking
 from rooms.models import Post
 from django.shortcuts import redirect
 from .forms import BookingForm
+from django.contrib.auth.decorators import login_required
+from django.shortcuts import render, get_object_or_404, redirect
 
 
 # Create your views here.
@@ -50,3 +52,33 @@ def index(request):
         rooms = Room.objects.all()
         form = BookingForm()
         return render(request, 'bookings/appbooking.html', {'form': form, 'rooms': rooms})
+
+
+#show the bookings for user logged
+
+@login_required
+def user_bookings(request):
+    bookings = Booking.objects.filter(user=request.user)
+    return render(request, 'bookings/user_bookings.html', {'bookings': bookings})
+
+
+@login_required
+def change_booking(request, pk):
+    booking = get_object_or_404(Booking, pk=pk, user=request.user)
+    if request.method == "POST":
+        form = BookingForm(request.POST, instance=booking)
+        if form.is_valid():
+            form.save()
+            return redirect('user_bookings')
+    else:
+        form = BookingForm(instance=booking)
+    return render(request, 'bookings/change_booking.html', {'form': form})
+
+@login_required
+def delete_booking(request, pk):
+    booking = get_object_or_404(Booking, pk=pk, user=request.user)
+    if request.method == "POST":
+        booking.delete()
+        return redirect('user_bookings')
+    return render(request, 'bookings/confirm_delete.html', {'booking': booking})
+

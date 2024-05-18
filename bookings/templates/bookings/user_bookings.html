@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block title %}My Bookings{% endblock %}
+
+{% block content %}
+<h1>My Bookings</h1>
+{% if bookings %}
+    <ul>
+    {% for booking in bookings %}
+        <li>
+            {{ booking.room.name }}: {{ booking.start_time }} to {{ booking.end_time }}
+            <a href="{% url 'change_booking' booking.pk %}" class="btn btn-warning btn-sm">Change</a>
+            <a href="{% url 'delete_booking' booking.pk %}" class="btn btn-danger btn-sm">Delete</a>
+        </li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>You have no bookings.</p>
+{% endif %}
+
+{% if editing %}
+<h2>Edit Booking</h2>
+<form method="post" action="{% url 'change_booking' booking_to_edit.pk %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-primary">Save changes</button>
+    <a href="{% url 'user_bookings' %}" class="btn btn-secondary">Cancel</a>
+</form>
+{% endif %}
+
+{% if deleting %}
+<h2>Confirm Delete</h2>
+<p>Are you sure you want to delete the booking for {{ booking_to_delete.room.name }} from {{ booking_to_delete.start_time }} to {{ booking_to_delete.end_time }}?</p>
+<form method="post" action="{% url 'delete_booking' booking_to_delete.pk %}">
+    {% csrf_token %}
+    <button type="submit" class="btn btn-danger">Delete</button>
+    <a href="{% url 'user_bookings' %}" class="btn btn-secondary">Cancel</a>
+</form>
+{% endif %}
+{% endblock %}

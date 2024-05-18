@@ -1,6 +1,6 @@
 {% url 'home' as home_url %}
 {% url 'Bookings' as bookings_url %}
-
+{% url 'user_bookings' as bookings_url %}
 {% url 'account_login' as login_url %}
 {% url 'account_signup' as signup_url %}
 {% url 'account_logout' as logout_url %}
@@ -52,6 +52,10 @@
                       >
                     </li>
                     {% if user.is_authenticated %}
+<li class="nav-item">
+<a class="nav-link {% if request.path == bookings_url %}active{% endif %}" aria-current="page"
+href="{{ bookings_url }}">My Bookings</a>
+</li>
 <li class="nav-item">
 	<a class="nav-link {% if request.path == logout_url %}active{% endif %}" aria-current="page" href="{% url 'account_logout' %}">Logout</a>
 </li>
