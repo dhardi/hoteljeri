@@ -5,10 +5,10 @@ from django.contrib import messages
 from .models import Room, Booking
 from rooms.models import Post
 from .forms import BookingForm
+from django.shortcuts import render, redirect
 
-# View to render booking success page
-def booking_success(request):
-    return render(request, 'bookings/booking_success.html')
+
+
 
 # Class-based view to list posts
 class PostList(generic.ListView):
@@ -64,3 +64,24 @@ def delete_booking(request, pk):
         messages.success(request, "Booking deleted successfully!")
         return redirect('user_bookings')
     return render(request, 'bookings/confirm_delete.html', {'booking': booking})
+
+@login_required
+def book_room(request):
+    if request.method == 'POST':
+        form = BookingForm(request.POST)
+        if form.is_valid():
+            booking = form.save(user=request.user)
+            amount = str(booking.total_price)
+            print("Amount to pay:", amount)
+            return redirect('booking_success', amount=amount)  
+    else:
+        form = BookingForm()
+    return render(request, 'bookings/book_room.html', {'form': form})
+
+def booking_success(request):
+    # Fetch the booking object from the database or calculate total price if not saved yet
+    # Replace this with your actual logic to fetch the booking object
+    booking = Booking.objects.last()  # Example: Fetch the last booking object
+    total_price = booking.total_price  # Assuming the total price is saved in the booking object
+
+    return render(request, 'bookings/booking_success.html', {'total_price': total_price})

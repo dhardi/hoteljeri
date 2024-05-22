@@ -32,6 +32,28 @@ class BookingForm(forms.ModelForm):
                 raise ValidationError("This room is already booked for the given time period.")
 
         return cleaned_data
+        
+    def calculate_amount(self):
+        cleaned_data = self.cleaned_data
+        room = cleaned_data.get('room')
+        start_time = cleaned_data.get('start_time')
+        end_time = cleaned_data.get('end_time')
+
+        if room and start_time and end_time:
+            duration = (end_time - start_time).days
+            amount = duration * room.price_per_night
+            return amount
+        return 0
+
+    def save(self, commit=True, user=None):
+        booking = super().save(commit=False)
+        if user:
+            booking.user = user
+        # Calculate the total price and save it
+        booking.total_price = self.calculate_amount()
+        if commit:
+            booking.save()
+        return booking
 
     def save_booking(self, logged_in_user):
         booking = self.save(commit=False)
