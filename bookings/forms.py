@@ -13,21 +13,15 @@ class BookingForm(forms.ModelForm):
         start_time = cleaned_data.get('start_time')
         end_time = cleaned_data.get('end_time')
 
-        print("Start Time:", start_time)
-        print("End Time:", end_time)
-
-        # Validate start_time and end_time
         if start_time and end_time:
             if start_time >= end_time:
                 raise ValidationError("End time must be after start time.")
-
-            # Check for overlapping bookings
+            # Verifique se há reservas sobrepostas
             overlapping_bookings = Booking.objects.filter(
                 room=room,
                 start_time__lt=end_time,
                 end_time__gt=start_time
-            )
-            print("Overlapping Bookings:", overlapping_bookings)
+            ).exclude(pk=self.instance.pk)  # Excluir a reserva atual das verificações de sobreposição
             if overlapping_bookings.exists():
                 raise ValidationError("This room is already booked for the given time period.")
 
@@ -55,8 +49,4 @@ class BookingForm(forms.ModelForm):
             booking.save()
         return booking
 
-    def save_booking(self, logged_in_user):
-        booking = self.save(commit=False)
-        booking.user = logged_in_user
-        booking.save()
-        return booking
+  

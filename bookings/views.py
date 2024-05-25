@@ -19,6 +19,7 @@ class PostList(generic.ListView):
 # View to handle booking index
 def index(request):
     rooms = Room.objects.all()
+    print("those are rooms = ",rooms)
     if request.method == "POST":
         form = BookingForm(request.POST)
         if form.is_valid():
@@ -42,18 +43,20 @@ def user_bookings(request):
 @login_required
 def change_booking(request, pk):
     booking = get_object_or_404(Booking, pk=pk, user=request.user)
+    rooms = Room.objects.all()
+    print(rooms)  
     if request.method == "POST":
         form = BookingForm(request.POST, instance=booking)
         if form.is_valid():
             try:
-                form.save()
+                form.save(user=request.user)  # O total_price será recalculado aqui
                 messages.success(request, "Booking updated successfully!")
                 return redirect('user_bookings')
             except ValidationError as e:
                 form.add_error(None, e)
     else:
         form = BookingForm(instance=booking)
-    return render(request, 'bookings/change_booking.html', {'form': form})
+    return render(request, 'bookings/change_booking.html', {'form': form, 'rooms': rooms})
 
 # View to delete a booking
 @login_required

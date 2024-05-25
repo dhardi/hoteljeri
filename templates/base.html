@@ -114,6 +114,11 @@ href="{{ bookings_url }}">My Bookings</a>
          src="https://kit.fontawesome.com/be417a0ef1.js"
          crossorigin="anonymous"
        ></script>
+
+{% block scripts %}
+<script src="{% static 'js/booking.js' %}"></script>
+{% endblock %}
+
 </body>
 
 </html>
