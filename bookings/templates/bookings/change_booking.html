@@ -2,6 +2,21 @@
 {% load static %}
 
 {% block content %}
+
+{% if form.errors %}
+
+<div class="container mt-3">
+    <div class="alert alert-danger" role="alert">
+        <h4 class="alert-heading">Oops! There was an error.</h4>
+        <p>Please correct the following:</p>
+        {% for error in form.non_field_errors %}
+            <p>{{ error }}</p>
+        {% endfor %}
+    </div>
+</div>
+{% endif %}
+
+<!--main content-->
 <div class="container">
     <h1 class="mt-3 mb-4">Change Booking</h1>
     <form method="post">
