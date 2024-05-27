@@ -6,6 +6,7 @@ from .models import Room, Booking
 from rooms.models import Post
 from .forms import BookingForm
 from django.shortcuts import render, redirect
+from django.core.exceptions import ValidationError 
 
 
 
@@ -24,7 +25,7 @@ def index(request):
         form = BookingForm(request.POST)
         if form.is_valid():
             try:
-                form.save_booking(request.user)
+                form.save(user=request.user)
                 messages.success(request, "Booking successful!")
                 return redirect('booking_success')
             except ValidationError as e:
