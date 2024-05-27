@@ -5,4 +5,20 @@
     <h1>Booking Successful!</h1>
     <p>Your booking has been successfully created. We look forward to your stay!</p>
     <p>Amount to pay: £{{ total_price }}</p>
+    
+    <h2>Leave a Review</h2>
+    <form method="post" action="{% url 'submit_review' %}">
+        {% csrf_token %}
+        {{ review_form.as_p }}
+        <button type="submit" class="btn btn-primary">Submit Review</button>
+    </form>
+
+    <!-- Alert Message -->
+    {% if messages %}
+        {% for message in messages %}
+            <div class="alert alert-success mt-3" role="alert">
+                {{ message }}
+            </div>
+        {% endfor %}
+    {% endif %}
 {% endblock %}

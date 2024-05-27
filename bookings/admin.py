@@ -4,6 +4,7 @@ from .models import *
 
 
 admin.site.register(Room)
+admin.site.register(Review)
 
 admin.site.register(Booking)
 list_display = ('user', 'room', 'end_time')

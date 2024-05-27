@@ -1,6 +1,7 @@
 from django import forms
 from django.core.exceptions import ValidationError
 from .models import Room, Booking
+from .models import Review
 
 class BookingForm(forms.ModelForm):
     class Meta:
@@ -48,5 +49,14 @@ class BookingForm(forms.ModelForm):
         if commit:
             booking.save()
         return booking
+
+class ReviewForm(forms.ModelForm):
+    class Meta:
+        model = Review
+        fields = ['rating', 'comment']
+        widgets = {
+            'rating': forms.Select(choices=[(i, i) for i in range(1, 6)]),
+            'comment': forms.Textarea(attrs={'rows': 4}),
+        }
 
   

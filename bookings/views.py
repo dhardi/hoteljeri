@@ -7,6 +7,7 @@ from rooms.models import Post
 from .forms import BookingForm
 from django.shortcuts import render, redirect
 from django.core.exceptions import ValidationError 
+from .forms import ReviewForm
 
 
 
@@ -87,5 +88,22 @@ def booking_success(request):
     # Replace this with your actual logic to fetch the booking object
     booking = Booking.objects.last()  # Example: Fetch the last booking object
     total_price = booking.total_price  # Assuming the total price is saved in the booking object
+    review_form = ReviewForm()
 
-    return render(request, 'bookings/booking_success.html', {'total_price': total_price})
+    return render(request, 'bookings/booking_success.html', {'total_price': total_price, 'review_form': review_form})
+
+
+@login_required
+def submit_review(request):
+    if request.method == 'POST':
+        form = ReviewForm(request.POST)
+        if form.is_valid():
+            review = form.save(commit=False)
+            review.user = request.user
+            review.save()
+            messages.success(request, 'Thanks for the review!')
+            return redirect('booking_success')
+    else:
+        form = ReviewForm()
+        
+    return render(request, 'bookings/booking_success.html', {'review_form': form})
