@@ -2,18 +2,53 @@
 {% load static %}
 
 {% block content %}
-    <h1>Booking Successful!</h1>
-    <p>Your booking has been successfully created. We look forward to your stay!</p>
-    <p>Amount to pay: £{{ total_price }}</p>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-12 text-center">
+            <h1 class="display-4">Booking Successful!</h1>
+            <p class="lead">Your booking has been successfully created. We look forward to your stay!</p>
+            <p class="h4">Amount to pay: £{{ total_price }}</p>
+        </div>
+    </div>
     
-    <h2>Leave a Review</h2>
-    <form method="post" action="{% url 'submit_review' %}">
-        {% csrf_token %}
-        {{ review_form.as_p }}
-        <button type="submit" class="btn btn-primary">Submit Review</button>
-    </form>
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-8">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h2 class="card-title mb-4">Leave a Review</h2>
+                    <form method="post" action="{% url 'submit_review' %}">
+                        {% csrf_token %}
+                        {% for field in review_form %}
+                            <div class="mb-3">
+                                {{ field.label_tag }}
+                                {{ field }}
+                                {% if field.help_text %}
+                                    <div class="form-text">{{ field.help_text }}</div>
+                                {% endif %}
+                                {% for error in field.errors %}
+                                    <div class="invalid-feedback d-block">{{ error }}</div>
+                                {% endfor %}
+                            </div>
+                        {% endfor %}
+                        <button type="submit" class="btn btn-primary">Submit Review</button>
+                    </form>
+                    {% if messages %}
+                        <div class="mt-3">
+                            {% for message in messages %}
+                                <div class="alert {% if message.tags %}alert-{{ message.tags }}{% else %}alert-info{% endif %}" role="alert">
+                                    {{ message }}
+                                </div>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
 
-    <!-- Alert Message -->
+    <!-- Alert Message 
     {% if messages %}
         {% for message in messages %}
             <div class="alert alert-success mt-3" role="alert">
@@ -21,4 +56,5 @@
             </div>
         {% endfor %}
     {% endif %}
-{% endblock %}
+    -->
+
