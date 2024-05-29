@@ -107,3 +107,6 @@ def submit_review(request):
         form = ReviewForm()
         
     return render(request, 'bookings/booking_success.html', {'review_form': form})
+
+
+
