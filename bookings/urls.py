@@ -12,5 +12,6 @@ urlpatterns = [
     path('my-bookings/delete/<int:pk>/', views.delete_booking, name='delete_booking'),
     path('book-room/', book_room, name='book_room'),
     
+    
    # path('book_room/', views.book_room, name='book_room'),    
 ]

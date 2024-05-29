@@ -2,96 +2,98 @@
 {% load static %}
 
 {% block content %}
-
-
-{% if form.errors %}
-
-<div class="container mt-3">
-    <div class="alert alert-danger" role="alert">
-        <h4 class="alert-heading">Oops! There was an error.</h4>
-        <p>Please correct the following:</p>
-        {% for error in form.non_field_errors %}
-            <p>{{ error }}</p>
-        {% endfor %}
-    </div>
-</div>
-{% endif %}
-
-
-
-<!-- index.html content starts here -->
-<div class="container mt-5">
-    <div class="card">
-        <div class="row g-0">
-            <div class="col-md-8">
-                <img src="" class="img-fluid rounded-start" id="roomImage" alt="Room Image">
+    {% if user.is_authenticated %}
+        {% if form.errors %}
+            <div class="container mt-3">
+                <div class="alert alert-danger" role="alert">
+                    <h4 class="alert-heading">Oops! There was an error.</h4>
+                    <p>Please correct the following:</p>
+                    {% for error in form.non_field_errors %}
+                        <p>{{ error }}</p>
+                    {% endfor %}
+                </div>
             </div>
-            <div class="col-md-4">
-                <div class="row g-3" id="smallImagesContainer">
-                    <div class="col">
-                        <img src="" class="img-fluid rounded" id="smallImage1" alt="Small Image 1">
+        {% endif %}
+
+        <!-- index.html content starts here -->
+        <div class="container mt-5">
+            <div class="card">
+                <div class="row g-0">
+                    <div class="col-md-8">
+                        <img src="" class="img-fluid rounded-start" id="roomImage" alt="Room Image">
                     </div>
-                    <div class="col">
-                        <img src="" class="img-fluid rounded" id="smallImage2" alt="Small Image 2">
-                    </div>
-                    <div class="col">
-                        <img src="" class="img-fluid rounded" id="smallImage3" alt="Small Image 3">
+                    <div class="col-md-4">
+                        <div class="row g-3" id="smallImagesContainer">
+                            <div class="col">
+                                <img src="" class="img-fluid rounded" id="smallImage1" alt="Small Image 1">
+                            </div>
+                            <div class="col">
+                                <img src="" class="img-fluid rounded" id="smallImage2" alt="Small Image 2">
+                            </div>
+                            <div class="col">
+                                <img src="" class="img-fluid rounded" id="smallImage3" alt="Small Image 3">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+            <p id="descriptionR"></p>
+            <br>
+            <p>Price per Night £<span id="priceNight"></span></p>
+            <div>
+                <i class="fa-solid fa-wifi"></i>
+                <i class="fa-solid fa-mug-saucer"></i>
+                <i class="fa-solid fa-umbrella-beach"></i>
+                <i class="fa-solid fa-person-swimming"></i>
+            </div>
         </div>
-    </div>
-    <p id="descriptionR"></p>
-    <br>
-    <p>Price per Night £<span id="priceNight"></span></p>
-    <div>
-        <i class="fa-solid fa-wifi"></i>
-        <i class="fa-solid fa-mug-saucer"></i>
-        <i class="fa-solid fa-umbrella-beach"></i>
-        <i class="fa-solid fa-person-swimming"></i>
-    </div>
-</div>
 
-<h1>Book a Room</h1>
+        <h1>Book a Room</h1>
 
-<!-- Display error messages -->
+        <!-- Display error messages -->
 
-<div class="container">
-    <form method="POST" action="{% url 'bookings' %}">
-        {% csrf_token %}
-       
-        
-        <div class="mb-3">
-            <label for="room" class="form-label">Select Room:</label>
-            <select name="room" id="room" class="form-select">
-                <option value="" selected disabled>Select a room</option>
-                {% for room in rooms %}
-                    <option value="{{ room.id }}"
-                            data-image-url="{{ room.image_url_main }}"
-                            data-small-image-1="{{ room.small_image_url_1 }}"
-                            data-small-image-2="{{ room.small_image_url_2 }}"
-                            data-small-image-3="{{ room.small_image_url_3 }}"
-                            description-room="{{ room.description }}"
-                            price-night="{{ room.price_per_night }}">
-                        {{ room.name }}
-                    </option>
-                {% endfor %}
-            </select>
+        <div class="container">
+            <form method="POST" action="{% url 'bookings' %}">
+                {% csrf_token %}
+               
+                <div class="mb-3">
+                    <label for="room" class="form-label">Select Room:</label>
+                    <select name="room" id="room" class="form-select">
+                        <option value="" selected disabled>Select a room</option>
+                        {% for room in rooms %}
+                            <option value="{{ room.id }}"
+                                    data-image-url="{{ room.image_url_main }}"
+                                    data-small-image-1="{{ room.small_image_url_1 }}"
+                                    data-small-image-2="{{ room.small_image_url_2 }}"
+                                    data-small-image-3="{{ room.small_image_url_3 }}"
+                                    description-room="{{ room.description }}"
+                                    price-night="{{ room.price_per_night }}">
+                                {{ room.name }}
+                            </option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="start_time" class="form-label">Start Time:</label>
+                    <input type="datetime-local" name="start_time" id="start_time" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="end_time" class="form-label">End Time:</label>
+                    <input type="datetime-local" name="end_time" id="end_time" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-primary">Book Room</button>
+            </form>
         </div>
-        <div class="mb-3">
-            <label for="start_time" class="form-label">Start Time:</label>
-            <input type="datetime-local" name="start_time" id="start_time" class="form-control">
-        </div>
-        <div class="mb-3">
-            <label for="end_time" class="form-label">End Time:</label>
-            <input type="datetime-local" name="end_time" id="end_time" class="form-control">
-        </div>
-        <button type="submit" class="btn btn-primary">Book Room</button>
-    </form>
-</div>
 
-{% block scripts %}
-<script src="{% static 'js/booking.js' %}"></script>
-{% endblock %}
-<!-- index.html content ends here -->
+        {% block scripts %}
+        <script src="{% static 'js/booking.js' %}"></script>
+        {% endblock %}
+        <!-- index.html content ends here -->
+    {% else %}
+        <div class="container mt-5">
+            <div class="alert alert-warning" role="alert">
+                Please <a href="{{ login_url }}">sign in</a> to book a room.
+            </div>
+        </div>
+    {% endif %}
 {% endblock %}
