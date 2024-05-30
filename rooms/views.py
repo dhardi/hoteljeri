@@ -19,3 +19,6 @@ class PostList(generic.ListView):
         context = super().get_context_data(**kwargs)
         context['reviews'] = Review.objects.all()  # Adicione todos os reviews ao contexto
         return context
+
+def beaches(request):
+    return render(request, 'rooms/beaches.html')

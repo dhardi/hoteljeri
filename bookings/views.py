@@ -85,9 +85,8 @@ def book_room(request):
 
 def booking_success(request):
     # Fetch the booking object from the database or calculate total price if not saved yet
-    # Replace this with your actual logic to fetch the booking object
-    booking = Booking.objects.last()  # Example: Fetch the last booking object
-    total_price = booking.total_price  # Assuming the total price is saved in the booking object
+    booking = Booking.objects.last()  
+    total_price = booking.total_price 
     review_form = ReviewForm()
 
     return render(request, 'bookings/booking_success.html', {'total_price': total_price, 'review_form': review_form})

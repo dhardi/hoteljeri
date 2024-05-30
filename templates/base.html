@@ -53,6 +53,15 @@
                         >Booking</a
                       >
                     </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link
+                        {% if request.path == beaches_url %}active{%endif%}"
+                        aria-current="page"
+                        href="{% url 'beaches' %}"
+                        >About jeri</a
+                      >
+                    </li>
                     {% if user.is_authenticated %}
 <li class="nav-item">
 <a class="nav-link {% if request.path == bookings_url %}active{% endif %}" aria-current="page"
