@@ -1,7 +1,7 @@
 from django.views import generic
 from django.shortcuts import render
 from .models import Post
-from bookings.models import Review  # Importe o modelo Review do seu app bookings
+from bookings.models import Review  
 
 
 
@@ -17,7 +17,7 @@ class PostList(generic.ListView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['reviews'] = Review.objects.all()  # Adicione todos os reviews ao contexto
+        context['reviews'] = Review.objects.all()  
         return context
 
 def beaches(request):

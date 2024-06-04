@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-
+{% load static %}
 {% block content %}
 <!-- slide-->
 <div id="carouselExampleDark" class="carousel carousel-dark slide">
@@ -122,6 +122,7 @@
   <div class="row">
     <div class="col-md-4">
       <div class="card">
+        <img src="{% static 'image/room.PNG' %}" class="card-img-top img-fluid" alt="Luxury Rooms">
         <div class="card-body">
           <h5 class="card-title">Luxury Rooms</h5>
           <p class="card-text">Experience the height of luxury in our exclusive rooms, featuring stunning decor, state-of-the-art amenities, and breathtaking views.</p>
@@ -130,6 +131,7 @@
     </div>
     <div class="col-md-4">
       <div class="card">
+        <img src="{% static 'image/beach.PNG' %}" class="card-img-top img-fluid" alt="Maragogi Beaches">
         <div class="card-body">
           <h5 class="card-title">Maragogi Beaches</h5>
           <p class="card-text">Discover the pristine beaches of Maragogi, where turquoise waters meet white sands, creating a perfect paradise for relaxation and adventure.</p>
@@ -138,6 +140,7 @@
     </div>
     <div class="col-md-4">
       <div class="card">
+        <img src="{% static 'image/resaurant.PNG' %}" class="card-img-top img-fluid" alt="Local Cuisine">
         <div class="card-body">
           <h5 class="card-title">Local Cuisine</h5>
           <p class="card-text">Savor the rich flavors of our local cuisine, with dishes that highlight the freshest ingredients and traditional recipes of the region.</p>
@@ -146,7 +149,6 @@
     </div>
   </div>
 </div>
-<!-- index.html content ends here -->
 
 <!-- index.html content ends here -->
 {% endblock %}
