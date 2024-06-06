@@ -1,15 +1,16 @@
 {% extends "base.html" %}
 {% url 'home' as home_url %}
 {% block content %}
+{% load static %}
 
-<div class="container my-5">
+<div class="container my-5 blog-container">
     <h2 class="text-center mb-4">Jericoacoara Travel Guide</h2>
 
     <h3 class="mb-3">Best Beaches</h3>
     <div class="row">
         <div class="col-md-6 mb-3">
             <div class="card">
-                <img src="https://example.com/jericoacoara-beach.jpg" class="card-img-top" alt="Jericoacoara Beach">
+                <img src="{% static 'image/jeribeach.jpg' %}" class="card-img-top blog-card-img" alt="Jericoacoara Beach">
                 <div class="card-body">
                     <h5 class="card-title">Jericoacoara Beach</h5>
                     <p class="card-text">Known for its stunning sunset views and vibrant nightlife.</p>
@@ -18,7 +19,7 @@
         </div>
         <div class="col-md-6 mb-3">
             <div class="card">
-                <img src="https://example.com/prea-beach.jpg" class="card-img-top" alt="Prea Beach">
+                <img src="{% static 'image/preabeach.jpg' %}" class="card-img-top blog-card-img" alt="Prea Beach">
                 <div class="card-body">
                     <h5 class="card-title">Prea Beach</h5>
                     <p class="card-text">A hotspot for kite surfing and windsurfing enthusiasts.</p>
@@ -27,7 +28,7 @@
         </div>
         <div class="col-md-6 mb-3">
             <div class="card">
-                <img src="https://example.com/malhada-beach.jpg" class="card-img-top" alt="Malhada Beach">
+                <img src="{% static 'image/malhadabeach.jpg' %}" class="card-img-top blog-card-img" alt="Malhada Beach">
                 <div class="card-body">
                     <h5 class="card-title">Malhada Beach</h5>
                     <p class="card-text">A more secluded beach, ideal for those seeking tranquility and natural beauty.</p>
@@ -36,7 +37,7 @@
         </div>
         <div class="col-md-6 mb-3">
             <div class="card">
-                <img src="https://example.com/guriu-beach.jpg" class="card-img-top" alt="Guriú Beach">
+                <img src="{% static 'image/guriu.jpg' %}" class="card-img-top blog-card-img" alt="Guriú Beach">
                 <div class="card-body">
                     <h5 class="card-title">Guriú Beach</h5>
                     <p class="card-text">Famous for its mangroves and boat tours through the river.</p>
@@ -46,7 +47,7 @@
     </div>
 
     <h3 class="mb-3 mt-5">Things to Do</h3>
-    <ul class="list-group mb-4">
+    <ul class="list-group mb-4 blog-list-group">
         <li class="list-group-item"><strong>Explore Duna do Pôr do Sol:</strong> Climb the dune to watch a breathtaking sunset.</li>
         <li class="list-group-item"><strong>Visit Pedra Furada:</strong> A natural rock formation that's a must-see landmark.</li>
         <li class="list-group-item"><strong>Take a Buggy Tour:</strong> Experience an exciting ride through the dunes and lagoons.</li>
@@ -54,7 +55,7 @@
     </ul>
 
     <h3 class="mb-3">Recommended Restaurants</h3>
-    <ul class="list-group">
+    <ul class="list-group blog-list-group">
         <li class="list-group-item"><strong>Tamarindo:</strong> Offers a great variety of seafood and Brazilian dishes.</li>
         <li class="list-group-item"><strong>Na Casa Dela:</strong> A charming place with a cozy atmosphere and delicious homemade food.</li>
         <li class="list-group-item"><strong>Bistrogonoff:</strong> Known for its excellent service and a mix of Brazilian and international cuisine.</li>
