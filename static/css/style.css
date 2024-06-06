@@ -51,3 +51,64 @@
     text-decoration: underline;
 }
 
+.custom-card-img {
+    width: 56%;
+    max-height: 200px; /* Limita a altura máxima da imagem */
+    object-fit: cover; /* Garante que a imagem se ajuste ao contêiner sem distorção */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    margin-bottom: 15px; /* Espaço entre a imagem e o conteúdo do cartão */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efeitos de transição para hover */
+}
+
+.custom-card-img:hover {
+    transform: scale(1.05); /* Aumenta um pouco o tamanho no hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra mais intensa no hover */
+}
+
+.image-container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+/*carousel*/
+
+.carousel {
+    position: relative;
+    background-color: #f0f8ff; /* Fundo azul claro */
+    padding: 20px; /* Espaçamento ao redor do carrossel */
+    border-radius: 15px; /* Bordas arredondadas no contêiner do carrossel */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil para o contêiner */
+}
+
+.carousel-inner {
+    border-radius: 15px; /* Bordas arredondadas nas imagens */
+    overflow: hidden; /* Garante que as bordas arredondadas sejam aplicadas corretamente */
+}
+
+.carousel-item img {
+    border-radius: 15px; /* Bordas arredondadas nas imagens */
+}
+
+.carousel-caption {
+    background: rgba(255, 255, 255, 0.8); /* Fundo branco semi-transparente */
+    padding: 10px; /* Espaçamento interno para o texto */
+    border-radius: 10px; /* Bordas arredondadas no texto */
+    color: #0056b3; /* Cor do texto azul escuro */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #0056b3; /* Ícones de controle com fundo azul escuro */
+    border-radius: 50%; /* Ícones redondos */
+    padding: 10px; /* Tamanho dos ícones */
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #0056b3; /* Cor azul escuro para os indicadores */
+}
+
+.carousel-indicators .active {
+    background-color: #fff; /* Cor branca para o indicador ativo */
+}

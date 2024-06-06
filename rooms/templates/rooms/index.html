@@ -3,43 +3,43 @@
 {% block content %}
 <!-- slide-->
 <div id="carouselExampleDark" class="carousel carousel-dark slide">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active" data-bs-interval="10000">
-        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/bc/6a/c0/jericoacoara-ou-jeri.jpg?w=1200&h=1200&s=1" class="d-block w-50 mx-auto" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
-          <p>Some representative placeholder content for the first slide.</p>
-        </div>
-      </div>
-      <div class="carousel-item" data-bs-interval="2000">
-        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/10/2e/d9/jericoacoara.jpg?w=1200&h=-1&s=1" class="d-block w-50 mx-auto" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Second slide label</h5>
-          <p>Some representative placeholder content for the second slide.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/31456806.jpg?k=a0e56c436e46b853442c536cc1c84b314a4d4ec5b287d0bfc68260fc00546309&o=&hp=1" class="d-block w-50 mx-auto" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Third slide label</h5>
-          <p>Some representative placeholder content for the third slide.</p>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/bc/6a/c0/jericoacoara-ou-jeri.jpg?w=1200&h=1200&s=1" class="d-block w-50 mx-auto" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/10/2e/d9/jericoacoara.jpg?w=1200&h=-1&s=1" class="d-block w-50 mx-auto" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/31456806.jpg?k=a0e56c436e46b853442c536cc1c84b314a4d4ec5b287d0bfc68260fc00546309&o=&hp=1" class="d-block w-50 mx-auto" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
 <!-- index.html content starts here -->
 <div class="container-fluid">
     <div class="row">
@@ -122,7 +122,9 @@
   <div class="row">
     <div class="col-md-4">
       <div class="card">
-        <img src="{% static 'image/room.PNG' %}" class="card-img-top img-fluid" alt="Luxury Rooms">
+        <div class="image-container">
+          <img src="{% static 'image/room.PNG' %}" class="card-img-top custom-card-img" alt="Luxury Rooms">
+        </div>
         <div class="card-body">
           <h5 class="card-title">Luxury Rooms</h5>
           <p class="card-text">Experience the height of luxury in our exclusive rooms, featuring stunning decor, state-of-the-art amenities, and breathtaking views.</p>
@@ -131,7 +133,9 @@
     </div>
     <div class="col-md-4">
       <div class="card">
-        <img src="{% static 'image/beach.PNG' %}" class="card-img-top img-fluid" alt="Maragogi Beaches">
+        <div class="image-container">
+          <img src="{% static 'image/beach.PNG' %}" class="card-img-top custom-card-img" alt="Maragogi Beaches">
+        </div>
         <div class="card-body">
           <h5 class="card-title">Maragogi Beaches</h5>
           <p class="card-text">Discover the pristine beaches of Maragogi, where turquoise waters meet white sands, creating a perfect paradise for relaxation and adventure.</p>
@@ -140,7 +144,9 @@
     </div>
     <div class="col-md-4">
       <div class="card">
-        <img src="{% static 'image/resaurant.PNG' %}" class="card-img-top img-fluid" alt="Local Cuisine">
+        <div class="image-container">
+          <img src="{% static 'image/resaurant.PNG' %}" class="card-img-top custom-card-img" alt="Local Cuisine">
+        </div>
         <div class="card-body">
           <h5 class="card-title">Local Cuisine</h5>
           <p class="card-text">Savor the rich flavors of our local cuisine, with dishes that highlight the freshest ingredients and traditional recipes of the region.</p>
