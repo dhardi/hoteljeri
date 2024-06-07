@@ -191,3 +191,8 @@ h3 {
 .mt-5 {
     margin-top: 3rem;
 }
+
+/*dropdown menu*/
+.hidden {
+    display: none;
+}

@@ -20,9 +20,9 @@
             <div class="card">
                 <div class="row g-0">
                     <div class="col-md-8">
-                        <img src="" class="img-fluid rounded-start" id="roomImage" alt="Room Image">
+                        <img src="{% static 'image/hoteldrop.jpg' %}" class="img-fluid rounded-start" id="roomImage" alt="Room Image">
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4" id="smallImagesContainerDiv">
                         <div class="row g-3" id="smallImagesContainer">
                             <div class="col">
                                 <img src="" class="img-fluid rounded" id="smallImage1" alt="Small Image 1">
@@ -48,18 +48,19 @@
             </div>
         </div>
 
-        <h1>Book a Room</h1>
+        
 
         <!-- Display error messages -->
 
         <div class="container">
+            <h1>Book a Room</h1>
             <form method="POST" action="{% url 'bookings' %}">
                 {% csrf_token %}
                
                 <div class="mb-3">
                     <label for="room" class="form-label">Select Room:</label>
                     <select name="room" id="room" class="form-select">
-                        <option value="" selected disabled>Select a room</option>
+                        <option value="" selected disabled data-placeholder-image="{% static 'image/hoteldrop.jpg' %}">Select a room</option>
                         {% for room in rooms %}
                             <option value="{{ room.id }}"
                                     data-image-url="{{ room.image_url_main }}"
