@@ -196,3 +196,89 @@ h3 {
 .hidden {
     display: none;
 }
+/*icons from booking page*/
+.icon-text {
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.icon-text i {
+    display: block;
+    margin-bottom: 8px; /* Espaçamento entre os itens */
+}
+
+/*nav bar*/
+/* Custom Styles for Navbar */
+.navbar {
+    background-color: #0d6efd !important;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: white !important;
+}
+
+.nav-link {
+    color: white !important;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #d4d4d4 !important;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+.navbar-text {
+    color: white;
+}
+
+@media (max-width: 992px) {
+    .navbar-brand {
+        font-size: 1.25rem;
+    }
+}
+
+/* Custom Styles for Logged-in and Logged-out Messages */
+.logged-in-message, .logged-out-message {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.logged-in-message {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.logged-out-message {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/*my bookings */
+/* Custom Styles */
+.card {
+    border-radius: 15px;
+    border: 1px solid #dee2e6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 0.9rem;
+}
+
+.btn {
+    border-radius: 8px;
+}

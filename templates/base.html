@@ -30,75 +30,57 @@
 
 <body class="d-flex flex-column h-100 main-bg">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white" >
-        <div class="container-fluid" style="background-color: #0d6efd">
-            <a class="navbar-brand" href="{% url 'home' %}">Hotel Jeri</span></span></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link {% if request.path == home_url %}active{% endif %}" aria-current="page"
-                            href="{% url 'home' %}">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a
-                        class="nav-link
-                        {% if request.path == bookings_url %}active{%endif%}"
-                        aria-current="page"
-                        href="{% url 'bookings' %}"
-                        >Booking</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a
-                        class="nav-link
-                        {% if request.path == beaches_url %}active{%endif%}"
-                        aria-current="page"
-                        href="{% url 'beaches' %}"
-                        >About jeri</a
-                      >
-                    </li>
-                    {% if user.is_authenticated %}
-<li class="nav-item">
-<a class="nav-link {% if request.path == bookings_url %}active{% endif %}" aria-current="page"
-href="{{ bookings_url }}">My Bookings</a>
-</li>
-<li class="nav-item">
-	<a class="nav-link {% if request.path == logout_url %}active{% endif %}" aria-current="page" href="{% url 'account_logout' %}">Logout</a>
-</li>
-{% else %}
-<li class="nav-item">
-	<a class="nav-link {% if request.path == signup_url %}active{% endif %}" aria-current="page"
-		href="{% url 'account_signup' %}">Register</a>
-</li>
-<li class="nav-item">
-	<a class="nav-link {% if request.path == login_url %}active{% endif %}" aria-current="page" href="{% url 'account_login' %}">Login</a>
-</li>
-{% endif %}
-                </ul>
-                <span class="navbar-text text-muted">
-                    
-                </span>
-            </div>
-        </div>
-    </nav>
+   <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+  <div class="container-fluid" style="background-color: #0d6efd;">
+      <a class="navbar-brand text-white fw-bold" href="{% url 'home' %}">Hotel Jeri</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                  <a class="nav-link {% if request.path == home_url %}active{% endif %} text-white" aria-current="page" href="{% url 'home' %}">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link {% if request.path == bookings_url %}active{% endif %} text-white" aria-current="page" href="{% url 'bookings' %}">Booking</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link {% if request.path == beaches_url %}active{% endif %} text-white" aria-current="page" href="{% url 'beaches' %}">About Jeri</a>
+              </li>
+              {% if user.is_authenticated %}
+              <li class="nav-item">
+                  <a class="nav-link {% if request.path == bookings_url %}active{% endif %} text-white" aria-current="page" href="{{ bookings_url }}">My Bookings</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link {% if request.path == logout_url %}active{% endif %} text-white" aria-current="page" href="{% url 'account_logout' %}">Logout</a>
+              </li>
+              {% else %}
+              <li class="nav-item">
+                  <a class="nav-link {% if request.path == signup_url %}active{% endif %} text-white" aria-current="page" href="{% url 'account_signup' %}">Register</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link {% if request.path == login_url %}active{% endif %} text-white" aria-current="page" href="{% url 'account_login' %}">Login</a>
+              </li>
+              {% endif %}
+          </ul>
+          <span class="navbar-text text-white">
+              <!-- Optional additional text -->
+          </span>
+      </div>
+  </div>
+</nav>
+<main class="flex-shrink-0 main-bg">
+  {% if user.is_authenticated %}
+  <p class="logged-in-message text-end m-3">Welcome, <strong>{{ user.username }}</strong>! You are logged in.</p>
+  {% else %}
+  <p class="logged-out-message text-end m-3">You are not logged in</p>
+  {% endif %}
 
-    <main class="flex-shrink-0 main-bg">
-      {% if user.is_authenticated %}
-      <p class="text-end m-3">You are logged in as {{ user.username }}</p>
-      {% else %}
-      <p class="text-end m-3">You are not logged in</p>
-      {% endif %}
-
-        {% block content %}
-        <!-- Content Goes here -->
-        {% endblock content %}
-
-    </main>
+  {% block content %}
+  <!-- Content Goes here -->
+  {% endblock content %}
+</main>
 
     <!-- Footer -->
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
