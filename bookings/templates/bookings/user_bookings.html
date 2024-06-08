@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-
+{% load static %}
 {% block title %}My Bookings{% endblock %}
 
 {% block content %}
@@ -41,13 +41,13 @@
     {% endif %}
 
     {% if deleting %}
-    <div class="mt-4">
-        <h2>Confirm Delete</h2>
-        <p class="mb-4">Are you sure you want to delete the booking for {{ booking_to_delete.room.name }} from {{ booking_to_delete.start_time|date:"F d, Y" }} to {{ booking_to_delete.end_time|date:"F d, Y" }}?</p>
+    <div class="confirmation-container mt-4">
+        <h2 class="confirmation-title">Confirm Deletion</h2>
+        <p class="confirmation-message mb-4">Are you sure you want to delete the booking for {{ booking_to_delete.room.name }} from {{ booking_to_delete.start_time|date:"F d, Y" }} to {{ booking_to_delete.end_time|date:"F d, Y" }}?</p>
         <form method="post" action="{% url 'delete_booking' booking_to_delete.pk %}">
             {% csrf_token %}
-            <button type="submit" class="btn btn-danger">Delete</button>
-            <a href="{% url 'user_bookings' %}" class="btn btn-secondary ms-2">Cancel</a>
+            <button type="submit" class="confirmation-btn confirmation-btn-danger">Delete</button>
+            <a href="{% url 'user_bookings' %}" class="confirmation-btn confirmation-btn-secondary ms-2">Cancel</a>
         </form>
     </div>
     {% endif %}

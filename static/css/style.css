@@ -282,3 +282,45 @@ h3 {
 .btn {
     border-radius: 8px;
 }
+
+/*delete confirm*/
+.delete-container {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.delete-title {
+    color: #343a40;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.delete-message {
+    color: #6c757d;
+    font-size: 16px;
+}
+
+.btn {
+    padding: 8px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: #fff;
+    border: none;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
