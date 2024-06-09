@@ -1,108 +1,100 @@
-READ ME TO BE ADDED
+# Hotel Jeri 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+![Responsive](https://www.openai.com/assets/images/openai-logo.svg)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## Design & Planning 
 
-## Gitpod Reminders
+The design and planning of the "Hotel Jeri" web application focused on creating an intuitive and visually appealing user interface that enhances user experience. We implemented a responsive design using Bootstrap, ensuring accessibility across all devices. Google Fonts and Font Awesome icons were integrated to provide a modern and clean aesthetic. The navigation bar offers clear links to essential pages such as Home, Booking, About Jeri, and user-specific sections like My Bookings, Login, and Register, facilitating easy navigation. Secure authentication features, including registration and login, were prioritized to protect user data. The planning phase involved detailed wireframing and prototyping, incorporating stakeholder feedback to refine the design and ensure a user-centric approach.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+### Introduction 
 
-`python3 -m http.server`
+Welcome to "Hotel Jeri," a sophisticated web application designed to streamline the booking process and enhance the user experience for our valued guests. Our platform offers a seamless interface for exploring and booking accommodations at Hotel Jeri, with detailed information about our services and the beautiful surroundings of Jeri. Utilizing modern web technologies such as Bootstrap for responsiveness, Google Fonts and Font Awesome for visual appeal, and Django for dynamic content management, we ensure a smooth and enjoyable online experience. With secure authentication features, users can easily register, log in, and manage their bookings, all within a user-friendly and visually appealing environment. Whether you're planning your next vacation or managing your reservations, "Hotel Jeri" is here to provide a convenient and delightful experience.
 
-A blue button should appear to click: _Make Public_,
+### Project Overview 
 
-Another blue button should appear to click: _Open Browser_.
+**Hotel Jeri** is a comprehensive web application designed to simplify the hotel booking experience for users while providing a robust platform for managing reservations. The project leverages modern web technologies and follows best practices in design and user experience to deliver a seamless and engaging interface. Here are the key features and components of the project:
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+- **Responsive Design**: Built with Bootstrap, the application is fully responsive, ensuring a smooth user experience across all devices, including desktops, tablets, and smartphones.
 
-A blue button should appear to click: _Make Public_,
+- **User-Friendly Interface**: The clean and intuitive interface uses Google Fonts and Font Awesome icons to enhance readability and navigation. The design prioritizes ease of use, allowing users to find information and make bookings effortlessly.
 
-Another blue button should appear to click: _Open Browser_.
+- **Secure Authentication**: Users can register, log in, and log out securely, with their personal information and booking details protected. The platform supports user-specific features such as viewing and managing personal bookings.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+- **Dynamic Content Management**: Using Django templates, the application supports dynamic content updates, making it easy to maintain and update information about hotel services, rooms, and local attractions.
 
-To log into the Heroku toolbelt CLI:
+- **Navigation and Accessibility**: The site includes a clear and accessible navigation bar with links to essential pages like Home, Booking, About Jeri, My Bookings, Login, and Register. This ensures users can easily access the information they need.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+- **Integration with External Resources**: The project incorporates external resources such as Google Fonts for typography and Font Awesome for icons, as well as leveraging CDN-hosted Bootstrap and JavaScript libraries for enhanced performance.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+By focusing on these aspects, **Hotel Jeri** aims to provide a top-notch online booking experience, combining functionality with an appealing design to meet the needs of modern travelers.
 
-------
+### Goals of Hotel Jeri Project
 
-## Release History
+The Hotel Jeri project aims to redefine the hotel booking experience by offering a user-friendly web application that prioritizes simplicity, security, and performance. Targeted towards modern travelers, its goals include:
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+1. **Simplified Booking**: Streamlining the booking process for ease and efficiency.
+2. **Enhanced User Experience**: Providing an intuitive interface for seamless navigation and interaction.
+3. **Secure Data Handling**: Ensuring the protection of user information and booking details.
+4. **Dynamic Content Management**: Offering up-to-date information on hotel services and local attractions.
+5. **Accessibility and Integration**: Making the platform easily accessible and integrating external resources for enhanced functionality.
+6. **Optimized Performance**: Delivering fast loading times and smooth interactions for a seamless user experience.
 
-**September 20 2023:** Update Python version to 3.9.17.
+By achieving these objectives, Hotel Jeri aims to cater to the needs of its target audience, offering a top-notch online booking platform tailored to modern travelers.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+## User Stories
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+Underconstruction 
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+## Wireframes 
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+### Desktop 
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+- Landing Page 
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+![Responsive](https://www.openai.com/assets/images/openai-logo.svg)
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+- Booking
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+![Responsive](https://www.openai.com/assets/images/openai-logo.svg)
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+- My Bookings
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+![Responsive](https://www.openai.com/assets/images/openai-logo.svg)
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+- After Sign in 
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+![Responsive](https://www.openai.com/assets/images/openai-logo.svg)
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+- Registration
 
-------
+![Responsive](https://www.openai.com/assets/images/openai-logo.svg)
 
-## FAQ about the uptime script
+- Sign in
 
-**Why have you added this script?**
+![Responsive](https://www.openai.com/assets/images/openai-logo.svg)
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
 
-**How will this affect me?**
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+### Mobile Phone 
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+- Landing Page 
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+![Responsive](https://www.openai.com/assets/images/openai-logo.svg)
 
-**So….?**
+- Booking
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+![Responsive](https://www.openai.com/assets/images/openai-logo.svg)
 
-**Can I opt out?**
+- My Bookings
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+![Responsive](https://www.openai.com/assets/images/openai-logo.svg)
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+- Registration
 
-**Anything more?**
+![Responsive](https://www.openai.com/assets/images/openai-logo.svg)
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+- Sign in
 
----
+![Responsive](https://www.openai.com/assets/images/openai-logo.svg)
 
-Happy coding!
