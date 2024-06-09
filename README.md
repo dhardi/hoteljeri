@@ -116,7 +116,7 @@ Darker Gray (#ddd): Used for dividers and borders.
 
 ## DataBase Diagram 
 
-![DataBase](https://github.com/dhardi/hoteljeri/blob/main/static/image/mobilesignin.PNG)
+![DataBase](https://github.com/dhardi/hoteljeri/blob/main/static/image/database.PNG)
 
 **User Table**:
 - Fields: `id` (PK), ...
