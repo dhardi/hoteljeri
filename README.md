@@ -159,19 +159,19 @@ Used for dividers and borders.
 
 **Navegation**:
 
-  ![Navegation](https://github.com/dhardi/hoteljeri/blob/main/static/image/database.PNG)
+  ![Navegation](https://github.com/dhardi/hoteljeri/blob/main/static/image/navegation.PNG)
 
   **Reviews all custumers**:
 
-  ![Reviews](https://github.com/dhardi/hoteljeri/blob/main/static/image/database.PNG)
+  ![Reviews](https://github.com/dhardi/hoteljeri/blob/main/static/image/reviewslandpage.PNG)
 
    **Loggin Message**:
 
-  ![Loggin](https://github.com/dhardi/hoteljeri/blob/main/static/image/database.PNG)
+  ![Loggin](https://github.com/dhardi/hoteljeri/blob/main/static/image/logginmessage.PNG)
 
   **Book System**:
 
-  ![Book system](https://github.com/dhardi/hoteljeri/blob/main/static/image/database.PNG)
+  ![Book system](https://github.com/dhardi/hoteljeri/blob/main/static/image/booksystem.PNG)
 
   **Manage My Bookings**:
 
@@ -179,24 +179,24 @@ Used for dividers and borders.
 
   **Change Booking**:
 
-  ![Change Booking](https://github.com/dhardi/hoteljeri/blob/main/static/image/database.PNG)
+  ![Change Booking](https://github.com/dhardi/hoteljeri/blob/main/static/image/change_booking.PNG)
 
   **Delete Booking**:
 
-  ![Delete Booking](https://github.com/dhardi/hoteljeri/blob/main/static/image/database.PNG)
+  ![Delete Booking](https://github.com/dhardi/hoteljeri/blob/main/static/image/deletebooking.PNG)
 
   **Message Not Logged**:
 
-  ![Not Logged](https://github.com/dhardi/hoteljeri/blob/main/static/image/database.PNG)
+  ![Not Logged](https://github.com/dhardi/hoteljeri/blob/main/static/image/notlogged.PNG)
 
   **Registration**:
 
-  ![Sign in](https://github.com/dhardi/hoteljeri/blob/main/static/image/database.PNG)
+  ![Registration](https://github.com/dhardi/hoteljeri/blob/main/static/image/registration_form.PNG)
 
   **Sign in**:
 
-  ![Sign in](https://github.com/dhardi/hoteljeri/blob/main/static/image/database.PNG)
+  ![Sign in](https://github.com/dhardi/hoteljeri/blob/main/static/image/logg_in.PNG)
 
   **About Jeri**:
 
-  ![About Jeri](https://github.com/dhardi/hoteljeri/blob/main/static/image/database.PNG)
+  ![About Jeri](https://github.com/dhardi/hoteljeri/blob/main/static/image/about_jeri.PNG)
