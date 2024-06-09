@@ -175,7 +175,7 @@ Used for dividers and borders.
 
   **Manage My Bookings**:
 
-  ![Manage Bookings](https://github.com/dhardi/hoteljeri/blob/main/static/image/database.PNG)
+  ![Manage Bookings](https://github.com/dhardi/hoteljeri/blob/main/static/image/managebookings.PNG)
 
   **Change Booking**:
 
@@ -200,3 +200,74 @@ Used for dividers and borders.
   **About Jeri**:
 
   ![About Jeri](https://github.com/dhardi/hoteljeri/blob/main/static/image/about_jeri.PNG)
+
+  # Deployment
+
+This website is deployed to Heroku from a GitHub repository. The following steps were taken:
+
+## Creating Repository on GitHub
+
+1. First, make sure you are signed into GitHub and go to the [Code Institute's template](https://github.com/Code-Institute-Org/gitpod-full-template).
+2. Then click on "use this template" and select "Create a new repository" from the drop-down. Enter the name for the repository and click "Create repository from template".
+3. Once the repository was created, I clicked the green Gitpod button to create a workspace in Gitpod so that I could write the code for the site.
+
+## Creating an app on Heroku
+
+1. After creating the repository on GitHub, head over to [Heroku](https://www.heroku.com/) and sign in.
+2. On the home page, click "New" and select "Create new app" from the drop-down.
+3. Give the app a name (this must be unique) and select a region. I chose Europe as I am in Europe. Then click "Create app".
+
+## Create a database On ElephantSQL
+
+1. Log into the [ElephantSQL](https://www.elephantsql.com/) from Code Institute website and enter your email and click submit.
+2. As soon as you sign up you will receive an email with all the details about your PostgreSQL database.
+3. You will find the PostgreSQL URL, copy that.
+4. Head over to Gitpod and create a Database URL environment variable in your `env.py` file and set it equal to the copied URL.
+
+## Deploying to Heroku
+
+1. Head back over to Heroku and click on your app and then go to the "Settings" tab.
+2. On the settings page, scroll down to the "config vars" section and enter the following:
+   - `DATABASE_URL`: which you will set equal to the ElephantSQL URL.
+   - `Secret key`: this can be anything.
+   - `CLOUDINARY_URL`: this will be set to your Cloudinary URL.
+   - `Port`: which will be set to 8000.
+3. Then scroll to the top and go to the "Deploy" tab and go down to the "Deployment method" section and select GitHub and then sign into your account.
+4. Below that in the "search for a repository to connect to" search box enter the name of your repository that you created on GitHub and click connect.
+5. Once it has been connected scroll down to the "Manual Deploy" and click "Deploy branch". When it has deployed you will see a "view app" button below and this will bring you to your newly deployed app.
+
+Please note that when deploying manually you will have to deploy after each change you make to your repository.
+
+Heroku needs two additional files in order to deploy properly:
+- `requirements.txt`
+- `Procfile`
+
+You can install this project's requirements (where applicable) using:
+
+
+- pip3 install -r requirements.txt
+
+ - If you have your own packages that have been installed, then the requirements file needs to be updated using:
+  - pip3 freeze --local > requirements.txt
+The Procfile can be created with the following command:
+ - echo web: gunicorn app_name.wsgi > Procfile
+
+ Replace `app_name` with the name of your primary Django app; the folder where `settings.py` is located.
+
+For Heroku deployment, follow these steps to connect your own GitHub repository to the newly created app:
+
+- Either:
+  - Select Automatic Deployment from the Heroku app.
+  - Or:
+    In the Terminal/CLI, connect to Heroku using this command:
+    ```
+    heroku login -i
+    ```
+  - heroku login -i
+
+  - heroku git:remote -a app_name
+
+After performing the standard Git add, commit, and push to GitHub, you can now type:
+
+- git push heroku main
+
