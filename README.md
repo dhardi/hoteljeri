@@ -72,7 +72,7 @@ Underconstruction
 
 - Sign in
 
-![Responsive](https://www.openai.com/assets/images/openai-logo.svg)
+![Responsive](https://github.com/dhardi/hoteljeri/blob/main/static/image/signin.PNG)
 
 
 
@@ -98,3 +98,42 @@ Underconstruction
 
 ![Responsive](https://github.com/dhardi/hoteljeri/blob/main/static/image/mobilesignin.PNG)
 
+## Agile Methodology
+
+Underconstrutcion 
+
+
+## Colour Scheme 
+
+Main Blue (#0d6efd): Used for titles, primary buttons, and some highlighted elements.
+Secondary Blue (#0b5ed7): Used to accentuate buttons on hover.
+Darker Blue (#0056b3): Used for carousel arrow icons and other elements.
+Light Gray (#f8f9fa): Used for background in some containers.
+White (#ffffff): Used for the background of some elements like carousel slides.
+Gray (#333): Used for main text.
+Lighter Gray (#555): Used for secondary text.
+Darker Gray (#ddd): Used for dividers and borders.
+
+## DataBase Diagram 
+
+![DataBase](https://github.com/dhardi/hoteljeri/blob/main/static/image/mobilesignin.PNG)
+
+**User Table**:
+- Fields: `id` (PK), ...
+- Relationship: One user can make many bookings.
+
+**Booking Table**:
+- Fields: `id` (PK), `user_id` (FK), `room_id` (FK), `start_time`, `end_time`, `total_price`, `created_at`.
+- Relationships: 
+  - Belongs to one user (`user_id`).
+  - Belongs to one room (`room_id`).
+
+**Room Table**:
+- Fields: `id` (PK), `name`, `capacity`, `image_url_main`, `description`, `price_per_night`, `small_image_url_1`, `small_image_url_2`, `small_image_url_3`.
+- Relationship: One room can have many bookings.
+
+**Review Table**:
+- Fields: `id` (PK), `user_id` (FK), `room_id` (FK), `rating`, `comment`, `created_at`.
+- Relationships: 
+  - Belongs to one user (`user_id`).
+  - Belongs to one room (`room_id`).
