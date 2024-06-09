@@ -105,14 +105,29 @@ Underconstrutcion
 
 ## Colour Scheme 
 
-Main Blue (#0d6efd): Used for titles, primary buttons, and some highlighted elements.
-Secondary Blue (#0b5ed7): Used to accentuate buttons on hover.
-Darker Blue (#0056b3): Used for carousel arrow icons and other elements.
-Light Gray (#f8f9fa): Used for background in some containers.
-White (#ffffff): Used for the background of some elements like carousel slides.
-Gray (#333): Used for main text.
-Lighter Gray (#555): Used for secondary text.
-Darker Gray (#ddd): Used for dividers and borders.
+### Main Blue (`#0d6efd`):
+Used for titles, primary buttons, and some highlighted elements.
+
+### Secondary Blue (`#0b5ed7`):
+Used to accentuate buttons on hover.
+
+### Darker Blue (`#0056b3`):
+Used for carousel arrow icons and other elements.
+
+### Light Gray (`#f8f9fa`):
+Used for background in some containers.
+
+### White (`#ffffff`):
+Used for the background of some elements like carousel slides.
+
+### Gray (`#333`):
+Used for main text.
+
+### Lighter Gray (`#555`):
+Used for secondary text.
+
+### Darker Gray (`#ddd`):
+Used for dividers and borders.
 
 ## DataBase Diagram 
 
