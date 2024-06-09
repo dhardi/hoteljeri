@@ -52,23 +52,23 @@ Underconstruction
 
 - Landing Page 
 
-![Responsive](https://www.openai.com/assets/images/openai-logo.svg)
+![Responsive](https://github.com/dhardi/hoteljeri/blob/main/static/image/landingpage.PNG)
 
 - Booking
 
-![Responsive](https://www.openai.com/assets/images/openai-logo.svg)
+![Responsive](https://github.com/dhardi/hoteljeri/blob/main/static/image/booking.PNG)
 
 - My Bookings
 
-![Responsive](https://www.openai.com/assets/images/openai-logo.svg)
+![Responsive](https://github.com/dhardi/hoteljeri/blob/main/static/image/mybookings.PNG)
 
 - After Sign in 
 
-![Responsive](https://www.openai.com/assets/images/openai-logo.svg)
+![Responsive](https://github.com/dhardi/hoteljeri/blob/main/static/image/aftersignin.PNG)
 
 - Registration
 
-![Responsive](https://www.openai.com/assets/images/openai-logo.svg)
+![Responsive](https://github.com/dhardi/hoteljeri/blob/main/static/image/registration.PNG)
 
 - Sign in
 
@@ -80,21 +80,21 @@ Underconstruction
 
 - Landing Page 
 
-![Responsive](https://www.openai.com/assets/images/openai-logo.svg)
+![Responsive](https://github.com/dhardi/hoteljeri/blob/main/static/image/landmobile.PNG)
 
 - Booking
 
-![Responsive](https://www.openai.com/assets/images/openai-logo.svg)
+![Responsive](https://github.com/dhardi/hoteljeri/blob/main/static/image/mobilebook.PNG)
 
 - My Bookings
 
-![Responsive](https://www.openai.com/assets/images/openai-logo.svg)
+![Responsive](https://github.com/dhardi/hoteljeri/blob/main/static/image/mobilemybooking.PNG)
 
 - Registration
 
-![Responsive](https://www.openai.com/assets/images/openai-logo.svg)
+![Responsive](https://github.com/dhardi/hoteljeri/blob/main/static/image/mobileregis.PNG)
 
 - Sign in
 
-![Responsive](https://www.openai.com/assets/images/openai-logo.svg)
+![Responsive](https://github.com/dhardi/hoteljeri/blob/main/static/image/mobilesignin.PNG)
 
