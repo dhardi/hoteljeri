@@ -152,3 +152,51 @@ Used for dividers and borders.
 - Relationships: 
   - Belongs to one user (`user_id`).
   - Belongs to one room (`room_id`).
+
+  ## Features:
+
+  Existing Features 
+
+**Navegation**:
+
+  ![Navegation](https://github.com/dhardi/hoteljeri/blob/main/static/image/database.PNG)
+
+  **Reviews all custumers**:
+
+  ![Reviews](https://github.com/dhardi/hoteljeri/blob/main/static/image/database.PNG)
+
+   **Loggin Message**:
+
+  ![Loggin](https://github.com/dhardi/hoteljeri/blob/main/static/image/database.PNG)
+
+  **Book System**:
+
+  ![Book system](https://github.com/dhardi/hoteljeri/blob/main/static/image/database.PNG)
+
+  **Manage My Bookings**:
+
+  ![Manage Bookings](https://github.com/dhardi/hoteljeri/blob/main/static/image/database.PNG)
+
+  **Change Booking**:
+
+  ![Change Booking](https://github.com/dhardi/hoteljeri/blob/main/static/image/database.PNG)
+
+  **Delete Booking**:
+
+  ![Delete Booking](https://github.com/dhardi/hoteljeri/blob/main/static/image/database.PNG)
+
+  **Message Not Logged**:
+
+  ![Not Logged](https://github.com/dhardi/hoteljeri/blob/main/static/image/database.PNG)
+
+  **Registration**:
+
+  ![Sign in](https://github.com/dhardi/hoteljeri/blob/main/static/image/database.PNG)
+
+  **Sign in**:
+
+  ![Sign in](https://github.com/dhardi/hoteljeri/blob/main/static/image/database.PNG)
+
+  **About Jeri**:
+
+  ![About Jeri](https://github.com/dhardi/hoteljeri/blob/main/static/image/database.PNG)
