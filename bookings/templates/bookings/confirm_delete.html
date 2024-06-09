@@ -2,12 +2,12 @@
 {% load static %}
 {% block content %}
 <div class="delete-container">
-    <h2 class="delete-title">Confirmar Exclusão</h2>
-    <p class="delete-message">Tem certeza de que deseja excluir a reserva para {{ booking.room.name }} de {{ booking.start_time }} até {{ booking.end_time }}?</p>
+    <h2 class="delete-title">Confirm Deletion</h2>
+    <p class="delete-message">Are you sure you want to delete the reservation for {{ booking.room.name }} from {{ booking.start_time }} to {{ booking.end_time }}?</p>
     <form method="post">
         {% csrf_token %}
-        <button type="submit" class="btn btn-danger">Excluir</button>
-        <a href="{% url 'user_bookings' %}" class="btn btn-secondary">Cancelar</a>
+        <button type="submit" class="btn btn-danger">Delete</button>
+        <a href="{% url 'user_bookings' %}" class="btn btn-secondary">Cancel</a>
     </form>
 </div>
 {% endblock %}

@@ -201,6 +201,24 @@ Used for dividers and borders.
 
   ![About Jeri](https://github.com/dhardi/hoteljeri/blob/main/static/image/about_jeri.PNG)
 
+ # Technologies Used 
+
+- **HTML**: Used for the main site content.
+- **CSS**: Used for the main site design and layout.
+- **Bootstrap**: Used as the front-end CSS framework for modern responsiveness and pre-built components.
+- **JavaScript**: Used for user interaction on the site .
+- **Python**: Used as the back-end programming language.
+- **Git**: Used for version control (git add, git commit, git push).
+- **GitHub**: Used for secure online code storage.
+- **Gitpod**: Used as a cloud-based IDE for development.
+- **Django**: Used as the Python framework for the site.
+- **PostgreSQL**: Used as the relational database management.
+- **PostgreSQL from Code Institute**: Used as the Postgres database.
+- **Heroku**: Used for hosting the deployed back-end site.
+- **Website Mockup Generator**: Used to create the mockup image used in my readme.
+- **Balsamiq**: Used to design my site wireframes.
+
+ 
   # Deployment
 
 This website is deployed to Heroku from a GitHub repository. The following steps were taken:
@@ -271,3 +289,16 @@ After performing the standard Git add, commit, and push to GitHub, you can now t
 
 - git push heroku main
 
+## Credits
+
+Credits to:
+- **Brasil Javascript Community**
+- **Brasil Django Community**
+- **Stack Overflow Community**
+- **Slack Community**
+- **Thomas K**, Alumni Lead
+- **My Tutor and Friend Davide Bowers**
+
+
+
+Special Thanks to those who helped me when I had broken my code a thousand times and My family for Support.
