@@ -4,7 +4,7 @@ from django.utils import timezone
 
 class Room(models.Model):
     name = models.CharField(max_length=100)
-    capacity = models.IntegerField()
+    capacity = models.IntegerField(null=True, blank=True)
     image_url_main = models.URLField(blank=True)
     description = models.TextField(blank=True, default='')  
     price_per_night = models.DecimalField(max_digits=10, decimal_places=2, default=0.00)
