@@ -17,12 +17,12 @@ class BookingForm(forms.ModelForm):
         if start_time and end_time:
             if start_time >= end_time:
                 raise ValidationError("End time must be after start time.")
-            # Verifique se há reservas sobrepostas
+            # check if has bookings 
             overlapping_bookings = Booking.objects.filter(
                 room=room,
                 start_time__lt=end_time,
                 end_time__gt=start_time
-            ).exclude(pk=self.instance.pk)  # Excluir a reserva atual das verificações de sobreposição
+            ).exclude(pk=self.instance.pk)  # update the booking
             if overlapping_bookings.exists():
                 raise ValidationError("This room is already booked for the given time period.")
 

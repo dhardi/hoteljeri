@@ -2,6 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.utils import timezone
 
+#room model
 class Room(models.Model):
     name = models.CharField(max_length=100)
     capacity = models.IntegerField(null=True, blank=True)
@@ -12,7 +13,7 @@ class Room(models.Model):
     small_image_url_2 = models.URLField(blank=True)
     small_image_url_3 = models.URLField(blank=True)
  
-
+#Booking model
 class Booking(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     room = models.ForeignKey(Room, on_delete=models.CASCADE)
@@ -25,6 +26,7 @@ class Booking(models.Model):
     def duration(self):
         return self.end_time - self.start_time
 
+#Review model
 class Review(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     rating = models.PositiveSmallIntegerField(choices=[(i, i) for i in range(1, 6)])

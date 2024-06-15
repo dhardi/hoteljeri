@@ -51,7 +51,7 @@ class BookingTestCase(TestCase):
             'end_time': new_end_time
         })
 
-        self.assertEqual(response.status_code, 302)  # Redirecionamento após atualização bem-sucedida
+        self.assertEqual(response.status_code, 302)  # check if update has been done
 
         updated_booking = Booking.objects.get(pk=booking.pk)
         self.assertEqual(updated_booking.end_time.strftime('%Y-%m-%d %H:%M:%S'), new_end_time)
@@ -59,8 +59,8 @@ class BookingTestCase(TestCase):
     def test_delete_booking(self):
         booking = Booking.objects.create(user=self.user, room=self.room, start_time=datetime.now(), end_time=datetime.now() + timedelta(hours=1))
         response = self.client.post(reverse('delete_booking', kwargs={'pk': booking.pk}))
-        self.assertEqual(response.status_code, 302)  # Redirecionamento após exclusão bem-sucedida
+        self.assertEqual(response.status_code, 302)  # check if redirecit was done 
 
-        # Verifica se o Booking foi excluído do banco de dados
+        # check if book as delete from db
         booking_exists = Booking.objects.filter(pk=booking.pk).exists()
         self.assertFalse(booking_exists, f"Booking with pk={booking.pk} still exists in the database.")

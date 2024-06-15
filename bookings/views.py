@@ -51,7 +51,7 @@ def change_booking(request, pk):
         form = BookingForm(request.POST, instance=booking)
         if form.is_valid():
             try:
-                form.save(user=request.user)  # O total_price será recalculado aqui
+                form.save(user=request.user)  # Recalculate amout to pay
                 messages.success(request, "Booking updated successfully!")
                 return redirect('user_bookings')
             except ValidationError as e:
