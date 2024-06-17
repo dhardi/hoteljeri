@@ -45,6 +45,9 @@ By achieving these objectives, Hotel Jeri aims to cater to the needs of its targ
 
 Underconstruction 
 
+## Test and Validador
+
+[Tests Validadors for Hotel Jeri](https://github.com/dhardi/hoteljeri/blob/main/tests.md)
 
 ## Wireframes 
 

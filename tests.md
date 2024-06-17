@@ -1,4 +1,4 @@
-# Test Report 
+# automated tests 
 
 This report documents the automated tests executed for the Django application. The tests are defined in two test case classes: `RoomBookingViewTest` and `BookingTestCase`.
 
@@ -51,3 +51,6 @@ This class contains tests related to booking operations such as updating and del
   1. Creates a booking.
   2. Sends a POST request to delete the booking.
   3. Verifies that the booking is removed from the database.
+
+## Test Result
+![Test result](https://github.com/dhardi/hoteljeri/blob/main/static/image/test_py_ok.PNG)
