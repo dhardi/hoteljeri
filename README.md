@@ -295,8 +295,9 @@ After performing the standard Git add, commit, and push to GitHub, you can now t
 ## Credits
 
 Credits to:
-- **Brasil Javascript Community**
-- **Brasil Django Community**
+- **Brasil Javascript Facebook Community**
+- **Brasil Django Facebook Community**
+- **Brasil Python Facebook Community**
 - **Stack Overflow Community**
 - **Slack Community**
 - **Thomas K**, Alumni Lead

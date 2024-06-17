@@ -1,4 +1,4 @@
-# automated tests 
+# Automated tests 
 
 This report documents the automated tests executed for the Django application. The tests are defined in two test case classes: `RoomBookingViewTest` and `BookingTestCase`.
 
@@ -54,3 +54,18 @@ This class contains tests related to booking operations such as updating and del
 
 ## Test Result
 ![Test result](https://github.com/dhardi/hoteljeri/blob/main/static/image/test_py_ok.PNG)
+
+# Javascript Validator 
+
+- **Bookings**
+
+![Test result](https://github.com/dhardi/hoteljeri/blob/main/static/image/test_py_ok.PNG)
+
+- **Change Bookings**
+
+![Test result](https://github.com/dhardi/hoteljeri/blob/main/static/image/test_py_ok.PNG)
+
+#### Aplication Validation
+
+[JSHint](https://jshint.com/)
+ 
