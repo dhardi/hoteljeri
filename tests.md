@@ -63,9 +63,40 @@ This class contains tests related to booking operations such as updating and del
 
 - **Change Bookings**
 
-![Test result](https://github.com/dhardi/hoteljeri/blob/main/static/image/test_py_ok.PNG)
+![Test result](https://github.com/dhardi/hoteljeri/blob/main/static/image/change_bookingsjs_validator.PNG)
 
 #### Aplication Validation
 
 [JSHint](https://jshint.com/)
+
+# Python Validator 
+
+- **Forms.py**
+
+![Test result](https://github.com/dhardi/hoteljeri/blob/main/static/image/forms_validator.PNG)
+
+- **Models.py**
+
+![Test result](https://github.com/dhardi/hoteljeri/blob/main/static/image/models_validator.PNG)
+
+- **test.py**
+
+**It has whitespace because I had to broke the line to fit in standard pip8**
+
+![Test result](https://github.com/dhardi/hoteljeri/blob/main/static/image/test_validador.PNG)
+
+- **Urls.py**
+
+**It has whitespace because I had to broke the line to fit in standard pip8**
+
+![Test result](https://github.com/dhardi/hoteljeri/blob/main/static/image/url_validator.PNG)
+
+- **Views.py**
+
+![Test result](https://github.com/dhardi/hoteljeri/blob/main/static/image/views_validator.PNG)
+
+
+#### Aplication Validation
+
+[CI Python Linter](https://pep8ci.herokuapp.com/)
  
