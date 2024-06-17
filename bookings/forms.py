@@ -1,7 +1,7 @@
 from django import forms
 from django.core.exceptions import ValidationError
-from .models import Room, Booking
-from .models import Review
+from .models import Room, Booking, Review
+
 
 class BookingForm(forms.ModelForm):
     class Meta:
@@ -17,17 +17,19 @@ class BookingForm(forms.ModelForm):
         if start_time and end_time:
             if start_time >= end_time:
                 raise ValidationError("End time must be after start time.")
-            # check if has bookings 
+            # Check if has bookings
             overlapping_bookings = Booking.objects.filter(
                 room=room,
                 start_time__lt=end_time,
                 end_time__gt=start_time
-            ).exclude(pk=self.instance.pk)  # update the booking
+            ).exclude(pk=self.instance.pk)  # Update the booking
             if overlapping_bookings.exists():
-                raise ValidationError("This room is already booked for the given time period.")
+                raise ValidationError(
+                    "This room is already booked for the given time period."
+                )
 
         return cleaned_data
-        
+
     def calculate_amount(self):
         cleaned_data = self.cleaned_data
         room = cleaned_data.get('room')
@@ -49,6 +51,7 @@ class BookingForm(forms.ModelForm):
         if commit:
             booking.save()
         return booking
+
 
 class ReviewForm(forms.ModelForm):
     class Meta:
