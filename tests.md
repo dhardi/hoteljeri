@@ -59,7 +59,7 @@ This class contains tests related to booking operations such as updating and del
 
 - **Bookings**
 
-![Test result](https://github.com/dhardi/hoteljeri/blob/main/static/image/test_py_ok.PNG)
+![Test result](https://github.com/dhardi/hoteljeri/blob/main/static/image/bookings_validator.PNG)
 
 - **Change Bookings**
 
