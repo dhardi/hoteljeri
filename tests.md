@@ -100,3 +100,38 @@ This class contains tests related to booking operations such as updating and del
 
 [CI Python Linter](https://pep8ci.herokuapp.com/)
  
+# Lighthouse 
+
+- **Home page**
+
+![Test result](https://github.com/dhardi/hoteljeri/blob/main/static/image/home_lighthouse.PNG)
+
+- **Bookings**
+
+![Test result](https://github.com/dhardi/hoteljeri/blob/main/static/image/bookings_lighthouse.PNG)
+
+- **About Jeri**
+
+![Test result](https://github.com/dhardi/hoteljeri/blob/main/static/image/about_lighthouse.PNG)
+
+- **My Bookings**
+
+![Test result](https://github.com/dhardi/hoteljeri/blob/main/static/image/mybookings_lighthouse.PNG)
+
+## Mobile 
+
+- **Home page**
+
+![Test result](https://github.com/dhardi/hoteljeri/blob/main/static/image/home_mobile_lighthouse.PNG)
+
+- **Bookings**
+
+![Test result](https://github.com/dhardi/hoteljeri/blob/main/static/image/booking_mobile.PNG)
+
+- **About Jeri**
+
+![Test result](https://github.com/dhardi/hoteljeri/blob/main/static/image/about_mobile.PNG)
+
+- **My Bookings**
+
+![Test result](https://github.com/dhardi/hoteljeri/blob/main/static/image/mybookings_mobile.PNG)
