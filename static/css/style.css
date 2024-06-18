@@ -114,13 +114,13 @@
 
 /*beaches*/
 
-/* Estilo geral do contêiner do blog */
+/* containers */
 .blog-container {
     font-family: 'Arial', sans-serif;
     color: #333;
 }
 
-/* Títulos principais */
+/* style hs */
 h2 {
     font-family: 'Georgia', serif;
     color: #0056b3;
@@ -133,7 +133,7 @@ h3 {
     padding-bottom: 10px;
 }
 
-/* Cartões */
+/* Cards */
 .card {
     border: none;
     border-radius: 15px;
@@ -155,7 +155,7 @@ h3 {
     color: #555;
 }
 
-/* Imagens dos cartões */
+/* home imgs */
 .blog-card-img {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -163,7 +163,7 @@ h3 {
     object-fit: cover;
 }
 
-/* Listas */
+/* Lists */
 .blog-list-group .list-group-item {
     font-size: 1rem;
     padding: 15px 20px;
@@ -205,45 +205,47 @@ h3 {
 
 .icon-text i {
     display: block;
-    margin-bottom: 8px; /* Espaçamento entre os itens */
+    margin-bottom: 8px; 
 }
+
+
+
 
 /*nav bar*/
 /* Custom Styles for Navbar */
 .navbar {
-    background-color: #0d6efd !important;
+    background-color: #0d6efd !important; 
 }
 
 .navbar-brand {
     font-weight: bold;
     font-size: 1.5rem;
-    color: white !important;
+    color: white !important; 
 }
 
 .nav-link {
-    color: white !important;
+    color: white !important; 
     transition: color 0.3s ease-in-out;
 }
 
 .nav-link:hover,
 .nav-link.active {
-    color: #d4d4d4 !important;
+    color: #d4d4d4 !important; 
 }
 
 .navbar-toggler-icon {
-    filter: invert(1);
+    filter: invert(1); 
 }
 
 .navbar-text {
-    color: white;
+    color: white; 
 }
 
 @media (max-width: 992px) {
     .navbar-brand {
-        font-size: 1.25rem;
+        font-size: 1.25rem; 
     }
 }
-
 /* Custom Styles for Logged-in and Logged-out Messages */
 .logged-in-message, .logged-out-message {
     padding: 10px;
@@ -323,4 +325,10 @@ h3 {
 
 .btn-secondary:hover {
     background-color: #5a6268;
+}
+
+/*footer*/
+a:focus {
+    outline: 2px solid #ffffff;
+    outline-offset: 2px;
 }
