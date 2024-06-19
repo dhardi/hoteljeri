@@ -1,0 +1,334 @@
+.card {
+    border-radius: 10px;
+}
+.form-label {
+    font-weight: bold;
+    color: #0d6efd;
+}
+.form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+.btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+.btn-primary:hover {
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+}
+
+.card {
+    border-radius: 10px;
+    border: 1px solid #0d6efd;
+}
+.card-title {
+    font-weight: bold;
+    color: #0d6efd;
+}
+.form-label {
+    font-weight: bold;
+    color: #0d6efd;
+}
+.form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+.btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+.btn-primary:hover {
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+}
+.text-center a {
+    color: #0d6efd;
+    text-decoration: none;
+}
+.text-center a:hover {
+    color: #0b5ed7;
+    text-decoration: underline;
+}
+
+.custom-card-img {
+    width: 56%;
+    max-height: 200px; 
+    object-fit: cover; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 15px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+.custom-card-img:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.image-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+/*carousel*/
+
+.carousel {
+    position: relative;
+    background-color: #f0f8ff; 
+    padding: 20px; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.carousel-inner {
+    border-radius: 15px; 
+    overflow: hidden; 
+}
+
+.carousel-item img {
+    border-radius: 15px; 
+}
+
+.carousel-caption {
+    background: rgba(255, 255, 255, 0.8); 
+    padding: 10px; 
+    border-radius: 10px; 
+    color: #0056b3; 
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #0056b3; 
+    border-radius: 50%; 
+    padding: 10px; 
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #0056b3; 
+}
+
+.carousel-indicators .active {
+    background-color: #fff; 
+}
+
+/*beaches*/
+
+/* containers */
+.blog-container {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* style hs */
+h2 {
+    font-family: 'Georgia', serif;
+    color: #0056b3;
+}
+
+h3 {
+    font-family: 'Georgia', serif;
+    color: #333;
+    border-bottom: 2px solid #0056b3;
+    padding-bottom: 10px;
+}
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-family: 'Georgia', serif;
+    font-size: 1.25rem;
+    color: #0056b3;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* home imgs */
+.blog-card-img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Lists */
+.blog-list-group .list-group-item {
+    font-size: 1rem;
+    padding: 15px 20px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+
+.blog-list-group .list-group-item:last-child {
+    border-bottom: none;
+}
+
+.blog-list-group .list-group-item strong {
+    color: #0056b3;
+}
+
+/* Margens */
+.mb-3 {
+    margin-bottom: 1.5rem;
+}
+
+.mb-4 {
+    margin-bottom: 2rem;
+}
+
+.mt-5 {
+    margin-top: 3rem;
+}
+
+/*dropdown menu*/
+.hidden {
+    display: none;
+}
+/*icons from booking page*/
+.icon-text {
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.icon-text i {
+    display: block;
+    margin-bottom: 8px; 
+}
+
+
+
+
+/*nav bar*/
+/* Custom Styles for Navbar */
+.navbar {
+    background-color: #0d6efd !important; 
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: white !important; 
+}
+
+.nav-link {
+    color: white !important; 
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #d4d4d4 !important; 
+}
+
+.navbar-toggler-icon {
+    filter: invert(1); 
+}
+
+.navbar-text {
+    color: white; 
+}
+
+@media (max-width: 992px) {
+    .navbar-brand {
+        font-size: 1.25rem; 
+    }
+}
+/* Custom Styles for Logged-in and Logged-out Messages */
+.logged-in-message, .logged-out-message {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.logged-in-message {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.logged-out-message {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/*my bookings */
+/* Custom Styles */
+.card {
+    border-radius: 15px;
+    border: 1px solid #dee2e6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 0.9rem;
+}
+
+.btn {
+    border-radius: 8px;
+}
+
+/*delete confirm*/
+.delete-container {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.delete-title {
+    color: #343a40;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.delete-message {
+    color: #6c757d;
+    font-size: 16px;
+}
+
+.btn {
+    padding: 8px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: #fff;
+    border: none;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+/*footer*/
+a:focus {
+    outline: 2px solid #ffffff;
+    outline-offset: 2px;
+}
