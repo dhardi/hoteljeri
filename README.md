@@ -92,7 +92,7 @@ Despite the challenges and areas for improvement, the project was completed succ
 
 **user stories dashboard**
 
-![Responsive](https://github.com/dhardi/hoteljeri/blob/main/static/image/landingpage.PNG)
+![Responsive](https://github.com/dhardi/hoteljeri/blob/main/static/image/all_usersstories.PNG)
 
 # Classification of User Stories
 
@@ -128,11 +128,17 @@ These are crucial components necessary for the project's success. They form the 
 
 ### Bugs and Fix 
 
-at this date 
+At this date no Unfixed bugs
 
 ## Future Features
 
-Underconstruction 
+- Deals
+- Rooms
+- Services
+- Consuming 
+- Tours Services
+- Gift Cards
+
 
 ## Test and Validador
 
