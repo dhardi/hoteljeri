@@ -4,7 +4,7 @@ from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from .models import Room, Booking
 from rooms.models import Post
-from .forms import BookingForm, ReviewForm  # Importando ambos os formulários necessários
+from .forms import BookingForm, ReviewForm  
 from django.core.exceptions import ValidationError
 
 
@@ -91,9 +91,8 @@ def book_room(request):
 
 
 def booking_success(request):
-    # Assume que existe pelo menos um objeto Booking no banco de dados
     booking = Booking.objects.last()
-    total_price = booking.total_price if booking else 0  # Adicionando um tratamento caso booking seja None
+    total_price = booking.total_price if booking else 0  # add new amout to pay
     review_form = ReviewForm()
 
     return render(

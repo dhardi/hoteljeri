@@ -138,6 +138,7 @@ At this date no Unfixed bugs
 - Consuming 
 - Tours Services
 - Gift Cards
+- edit/delete Reviews
 
 
 ## Test and Validador
