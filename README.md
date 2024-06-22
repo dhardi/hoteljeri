@@ -51,21 +51,21 @@ This report summarizes the completion of a recent college project, focusing on t
 # Completed User Stories
 A total of 15 user stories were identified and completed as part of this project. The completed tasks include:
 
-- Install all packs
+- Install all packs 
+- Styling Bootstrap 
+- Sign in Page 
+- Change booking 
+- Create Booking System 
+- Create Folders 
+- Booking app 
+- set a Database 
+- acoount Registration 
+- Design Landing Page 
+- Create Admin 
+- Review 
+- Conection Heroku 
 - Reviews
-- Styling Bootstrap
-- Review
-- Sign in Page
-- Booking app
-- Create Booking System
-- Create Folders
-- Booking
-- Send Email
-- Create a Database
-- Add New User
-- Design Landing Page
-- Create Authentication System
-- Admin Dashboard
+- Create Templates
 
 # Challenges Faced
 As the sole individual responsible for this project, I encountered several challenges:
@@ -102,7 +102,7 @@ User stories in this project were classified into two types: "Could Have" and "E
 These are non-essential features that are nice to include if time and resources allow. They enhance the project but are not critical to its core functionality.
 
 - Reviews
-- Create Templates *
+- Create Templates 
 
 
 ## Epic Must Have
