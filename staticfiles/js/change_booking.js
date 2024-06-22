@@ -1,10 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Função para atualizar os detalhes do quarto com base no quarto selecionado
+    // update room details 
     function updateRoomDetails() {
-        // Obter o valor selecionado do menu suspenso
         var selectedRoomId = document.getElementById('room').value;
 
-        // Obter os elementos de detalhes da sala
+        // get elements of the room
         var roomImage = document.getElementById('roomImage');
         var smallImage1 = document.getElementById('smallImage1');
         var smallImage2 = document.getElementById('smallImage2');
@@ -12,10 +11,9 @@ document.addEventListener('DOMContentLoaded', function () {
         var descriptionR = document.getElementById('descriptionR');
         var priceNight = document.getElementById('priceNight');
 
-        // Obter a opção selecionada
         var selectedOption = document.getElementById('room').options[document.getElementById('room').selectedIndex];
 
-        // Atualizar os elementos de detalhes da sala com os valores dos atributos de dados da opção selecionada
+        // update image with dropdown menu
         roomImage.src = selectedOption.getAttribute('data-image-url');
         smallImage1.src = selectedOption.getAttribute('data-small-image-1');
         smallImage2.src = selectedOption.getAttribute('data-small-image-2');
@@ -24,9 +22,9 @@ document.addEventListener('DOMContentLoaded', function () {
         priceNight.textContent = "Price per Night: " + selectedOption.getAttribute('data-price-night');
     }
 
-    // Ouvinte de evento para detectar mudanças no menu suspenso
+    // check the update of dropdown menu
     document.getElementById('room').addEventListener('change', updateRoomDetails);
 
-    // Atualizar os detalhes do quarto quando a página é carregada inicialmente
+    // update the information 
     updateRoomDetails();
 });

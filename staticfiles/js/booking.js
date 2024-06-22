@@ -16,13 +16,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Get the value of the data-image-url attribute from the selected option
         var imageUrl = selectedOption.getAttribute('data-image-url');
-        // Get the value of the data-small-image-1 attribute from the selected option
         var smallImageUrl1 = selectedOption.getAttribute('data-small-image-1');
-        // Get the value of the data-small-image-2 attribute from the selected option
         var smallImageUrl2 = selectedOption.getAttribute('data-small-image-2');
-        // Get the value of the data-small-image-3 attribute from the selected option
         var smallImageUrl3 = selectedOption.getAttribute('data-small-image-3');
-        // Get the description of the room
         var description = selectedOption.getAttribute('description-room');
         var priceRoomNight = selectedOption.getAttribute('price-night');
 
@@ -57,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Chamada inicial para garantir que a div esteja oculta se nenhuma opção estiver selecionada ao carregar a página
+    
     if (!roomSelect.value) {
         smallImagesContainerDiv.style.display = 'none';
     }

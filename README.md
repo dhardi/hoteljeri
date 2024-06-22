@@ -1,6 +1,8 @@
 # Hotel Jeri 
 
-![Responsive](https://www.openai.com/assets/images/openai-logo.svg)
+![Responsive]()
+
+[See live site ](https://hotel-jeri-cd0d2dfc201b.herokuapp.com/)
 
 ## Design & Planning 
 
@@ -100,10 +102,6 @@ Underconstruction
 - Sign in
 
 ![Responsive](https://github.com/dhardi/hoteljeri/blob/main/static/image/mobilesignin.PNG)
-
-## Agile Methodology
-
-Underconstrutcion 
 
 
 ## Colour Scheme 
