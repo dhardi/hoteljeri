@@ -124,7 +124,7 @@ These are crucial components necessary for the project's success. They form the 
 
 **Users stories**
 
-[Tests Validadors for Hotel Jeri](https://github.com/dhardi/hoteljeri/issues)
+[All Users Stories ](https://github.com/dhardi/hoteljeri/issues)
 
 ### Bugs and Fix 
 
