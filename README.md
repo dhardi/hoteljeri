@@ -43,7 +43,94 @@ The Hotel Jeri project aims to redefine the hotel booking experience by offering
 
 By achieving these objectives, Hotel Jeri aims to cater to the needs of its target audience, offering a top-notch online booking platform tailored to modern travelers.
 
-## User Stories
+## User Stories, Bugs and Fix
+
+# Overview
+This report summarizes the completion of a recent college project, focusing on the user stories and tasks involved. As the sole contributor to this project, I encountered several challenges, particularly in task management and tracking. Despite these challenges, all tasks were completed successfully.
+
+# Completed User Stories
+A total of 15 user stories were identified and completed as part of this project. The completed tasks include:
+
+- Install all packs
+- Reviews
+- Styling Bootstrap
+- Review
+- Sign in Page
+- Booking app
+- Create Booking System
+- Create Folders
+- Booking
+- Send Email
+- Create a Database
+- Add New User
+- Design Landing Page
+- Create Authentication System
+- Admin Dashboard
+
+# Challenges Faced
+As the sole individual responsible for this project, I encountered several challenges:
+
+- **Complexity of Tasks:** Certain tasks, such as creating an authentication system and designing the landing page, were complex and required extensive time and research.
+- **Time Management:** Balancing multiple tasks simultaneously proved challenging, especially given the academic workload.
+- **Resource Constraints:** With limited resources and support, I had to rely heavily on self-learning and online resources to complete the project tasks.
+
+# Apology and Areas for Improvement
+I acknowledge that there was a lack of control and organization in tracking the progress of user stories. The following areas need improvement:
+
+- **Task Tracking:** Tasks were not always clearly tracked or updated, leading to periods of uncertainty about the project’s progress.
+- **Progress Monitoring:** Regular updates and self-assessment were not consistently performed, which could have helped in identifying and addressing issues earlier.
+- **Prioritization:** Better prioritization of tasks would have ensured that critical tasks were addressed in a timely manner.
+
+I apologize for these shortcomings and the resulting inefficiencies. To improve future projects, I will implement the following practices:
+
+- **Regular Status Updates:** Ensure that all tasks are updated regularly with their current status.
+- **Clear Task Assignments:** Create a more structured timeline and checklist for each task.
+- **Improved Time Management:** Allocate specific times for each task to ensure balanced progress across all project areas.
+
+# Conclusion
+Despite the challenges and areas for improvement, the project was completed successfully with all user stories marked as done. This project provided valuable learning experiences and highlighted the importance of effective task management and tracking. Moving forward, I am committed to refining my project management skills to ensure more efficient and organized project execution.
+
+**user stories dashboard**
+
+![Responsive](https://github.com/dhardi/hoteljeri/blob/main/static/image/landingpage.PNG)
+
+# Classification of User Stories
+
+User stories in this project were classified into two types: "Could Have" and "Epic Must Have".
+
+## Could Have
+These are non-essential features that are nice to include if time and resources allow. They enhance the project but are not critical to its core functionality.
+
+- Reviews
+- Create Templates *
+
+
+## Epic Must Have
+These are crucial components necessary for the project's success. They form the foundation and primary functionality that the project cannot do without.
+
+- Install all packs 
+- Styling Bootstrap 
+- Sign in Page 
+- Change booking 
+- Create Booking System 
+- Create Folders 
+- Booking app 
+- set a Database 
+- acoount Registration 
+- Design Landing Page 
+- Create Admin 
+- Review 
+- Conection Heroku 
+
+**Users stories**
+
+[Tests Validadors for Hotel Jeri](https://github.com/dhardi/hoteljeri/issues)
+
+### Bugs and Fix 
+
+at this date 
+
+## Future Features
 
 Underconstruction 
 
