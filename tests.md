@@ -53,17 +53,17 @@ This class contains tests related to booking operations such as updating and del
   3. Verifies that the booking is removed from the database.
 
 ## Test Result
-![Test result](https://github.com/dhardi/hoteljeri/blob/main/static/image/test_py_ok.PNG)
+![Test result](https://github.com/dhardi/hoteljeri/blob/main/docs/imgs/test_py_ok.PNG)
 
 # Javascript Validator 
 
 - **Bookings**
 
-![Test result](https://github.com/dhardi/hoteljeri/blob/main/static/image/bookings_validator.PNG)
+![Test result](https://github.com/dhardi/hoteljeri/blob/main/docs/imgs/bookings_validator.PNG)
 
 - **Change Bookings**
 
-![Test result](https://github.com/dhardi/hoteljeri/blob/main/static/image/change_bookingsjs_validator.PNG)
+![Test result](https://github.com/dhardi/hoteljeri/blob/main/docs/imgs/change_bookingsjs_validator.PNG)
 
 #### Aplication Validation
 
@@ -73,27 +73,27 @@ This class contains tests related to booking operations such as updating and del
 
 - **Forms.py**
 
-![Test result](https://github.com/dhardi/hoteljeri/blob/main/static/image/forms_validator.PNG)
+![Test result](https://github.com/dhardi/hoteljeri/blob/main/docs/imgs/forms_validator.PNG)
 
 - **Models.py**
 
-![Test result](https://github.com/dhardi/hoteljeri/blob/main/static/image/models_validator.PNG)
+![Test result](https://github.com/dhardi/hoteljeri/blob/main/docs/imgs/models_validator.PNG)
 
 - **test.py**
 
 **It has whitespace because I had to broke the line to fit in standard pip8**
 
-![Test result](https://github.com/dhardi/hoteljeri/blob/main/static/image/test_validador.PNG)
+![Test result](https://github.com/dhardi/hoteljeri/blob/main/docs/imgs/test_validador.PNG)
 
 - **Urls.py**
 
 **It has whitespace because I had to broke the line to fit in standard pip8**
 
-![Test result](https://github.com/dhardi/hoteljeri/blob/main/static/image/url_validator.PNG)
+![Test result](https://github.com/dhardi/hoteljeri/blob/main/docs/imgs/url_validator.PNG)
 
 - **Views.py**
 
-![Test result](https://github.com/dhardi/hoteljeri/blob/main/static/image/views_validator.PNG)
+![Test result](https://github.com/dhardi/hoteljeri/blob/main/docs/imgs/views_validator.PNG)
 
 
 #### Aplication Validation
@@ -104,37 +104,37 @@ This class contains tests related to booking operations such as updating and del
 
 - **Home page**
 
-![Test result](https://github.com/dhardi/hoteljeri/blob/main/static/image/home_lighthouse.PNG)
+![Test result](https://github.com/dhardi/hoteljeri/blob/main/docs/imgs/home_lighthouse.PNG)
 
 - **Bookings**
 
-![Test result](https://github.com/dhardi/hoteljeri/blob/main/static/image/bookings_lighthouse.PNG)
+![Test result](https://github.com/dhardi/hoteljeri/blob/main/docs/imgs/bookings_lighthouse.PNG)
 
 - **About Jeri**
 
-![Test result](https://github.com/dhardi/hoteljeri/blob/main/static/image/about_lighthouse.PNG)
+![Test result](https://github.com/dhardi/hoteljeri/blob/main/docs/imgs/about_lighthouse.PNG)
 
 - **My Bookings**
 
-![Test result](https://github.com/dhardi/hoteljeri/blob/main/static/image/mybookings_lighthouse.PNG)
+![Test result](https://github.com/dhardi/hoteljeri/blob/main/docs/imgs/mybookings_lighthouse.PNG)
 
 ## Mobile 
 
 - **Home page**
 
-![Test result](https://github.com/dhardi/hoteljeri/blob/main/static/image/home_mobile_lighthouse.PNG)
+![Test result](https://github.com/dhardi/hoteljeri/blob/main/docs/imgs/home_mobile_lighthouse.PNG)
 
 - **Bookings**
 
-![Test result](https://github.com/dhardi/hoteljeri/blob/main/static/image/booking_mobile.PNG)
+![Test result](https://github.com/dhardi/hoteljeri/blob/main/docs/imgs/booking_mobile.PNG)
 
 - **About Jeri**
 
-![Test result](https://github.com/dhardi/hoteljeri/blob/main/static/image/about_mobile.PNG)
+![Test result](https://github.com/dhardi/hoteljeri/blob/main/docs/imgs/about_mobile.PNG)
 
 - **My Bookings**
 
-![Test result](https://github.com/dhardi/hoteljeri/blob/main/static/image/mybookings_mobile.PNG)
+![Test result](https://github.com/dhardi/hoteljeri/blob/main/docs/imgs/mybookings_mobile.PNG)
 
 # Manual Testing Report for Hotel Jeri Website
 

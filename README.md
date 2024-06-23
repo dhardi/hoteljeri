@@ -92,7 +92,7 @@ Despite the challenges and areas for improvement, the project was completed succ
 
 **user stories dashboard**
 
-![Responsive](https://github.com/dhardi/hoteljeri/blob/main/static/image/all_usersstories.PNG)
+![Responsive](https://github.com/dhardi/hoteljeri/blob/main/docs/imgs/all_usersstories.PNG)
 
 # Classification of User Stories
 
@@ -151,27 +151,27 @@ At this date no Unfixed bugs
 
 - Landing Page 
 
-![Responsive](https://github.com/dhardi/hoteljeri/blob/main/static/image/landingpage.PNG)
+![Responsive](https://github.com/dhardi/hoteljeri/blob/main/docs/imgs/landingpage.PNG)
 
 - Booking
 
-![Responsive](https://github.com/dhardi/hoteljeri/blob/main/static/image/booking.PNG)
+![Responsive](https://github.com/dhardi/hoteljeri/blob/main/docs/imgs/booking.PNG)
 
 - My Bookings
 
-![Responsive](https://github.com/dhardi/hoteljeri/blob/main/static/image/mybookings.PNG)
+![Responsive](https://github.com/dhardi/hoteljeri/blob/main/docs/imgs/mybookings.PNG)
 
 - After Sign in 
 
-![Responsive](https://github.com/dhardi/hoteljeri/blob/main/static/image/aftersignin.PNG)
+![Responsive](https://github.com/dhardi/hoteljeri/blob/main/docs/imgs/aftersignin.PNG)
 
 - Registration
 
-![Responsive](https://github.com/dhardi/hoteljeri/blob/main/static/image/registration.PNG)
+![Responsive](https://github.com/dhardi/hoteljeri/blob/main/docs/imgs/registration.PNG)
 
 - Sign in
 
-![Responsive](https://github.com/dhardi/hoteljeri/blob/main/static/image/signin.PNG)
+![Responsive](https://github.com/dhardi/hoteljeri/blob/main/docs/imgs/signin.PNG)
 
 
 
@@ -179,23 +179,23 @@ At this date no Unfixed bugs
 
 - Landing Page 
 
-![Responsive](https://github.com/dhardi/hoteljeri/blob/main/static/image/landmobile.PNG)
+![Responsive](https://github.com/dhardi/hoteljeri/blob/main/docs/imgs/landmobile.PNG)
 
 - Booking
 
-![Responsive](https://github.com/dhardi/hoteljeri/blob/main/static/image/mobilebook.PNG)
+![Responsive](https://github.com/dhardi/hoteljeri/blob/main/docs/imgs/mobilebook.PNG)
 
 - My Bookings
 
-![Responsive](https://github.com/dhardi/hoteljeri/blob/main/static/image/mobilemybooking.PNG)
+![Responsive](https://github.com/dhardi/hoteljeri/blob/main/docs/imgs/mobilemybooking.PNG)
 
 - Registration
 
-![Responsive](https://github.com/dhardi/hoteljeri/blob/main/static/image/mobileregis.PNG)
+![Responsive](https://github.com/dhardi/hoteljeri/blob/main/docs/imgs/mobileregis.PNG)
 
 - Sign in
 
-![Responsive](https://github.com/dhardi/hoteljeri/blob/main/static/image/mobilesignin.PNG)
+![Responsive](https://github.com/dhardi/hoteljeri/blob/main/docs/imgs/mobilesignin.PNG)
 
 
 ## Colour Scheme 
@@ -226,8 +226,7 @@ Used for dividers and borders.
 
 ## DataBase Diagram 
 
-![DataBase](https://github.com/dhardi/hoteljeri/blob/main/static/image/database.PNG)
-
+![DataBase](https://github.com/dhardi/hoteljeri/blob/main/docs/imgs/docs/imgs)
 **User Table**:
 - Fields: `id` (PK), ...
 - Relationship: One user can make many bookings.
@@ -254,47 +253,47 @@ Used for dividers and borders.
 
 **Navegation**:
 
-  ![Navegation](https://github.com/dhardi/hoteljeri/blob/main/static/image/navegation.PNG)
+  ![Navegation](https://github.com/dhardi/hoteljeri/blob/main/docs/imgs/navegation.PNG)
 
   **Reviews all custumers**:
 
-  ![Reviews](https://github.com/dhardi/hoteljeri/blob/main/static/image/reviewslandpage.PNG)
+  ![Reviews](https://github.com/dhardi/hoteljeri/blob/main/docs/imgs/reviewslandpage.PNG)
 
    **Loggin Message**:
 
-  ![Loggin](https://github.com/dhardi/hoteljeri/blob/main/static/image/logginmessage.PNG)
+  ![Loggin](https://github.com/dhardi/hoteljeri/blob/main/docs/imgs/logginmessage.PNG)
 
   **Book System**:
 
-  ![Book system](https://github.com/dhardi/hoteljeri/blob/main/static/image/booksystem.PNG)
+  ![Book system](https://github.com/dhardi/hoteljeri/blob/main/docs/imgs/booksystem.PNG)
 
   **Manage My Bookings**:
 
-  ![Manage Bookings](https://github.com/dhardi/hoteljeri/blob/main/static/image/managebookings.PNG)
+  ![Manage Bookings](https://github.com/dhardi/hoteljeri/blob/main/docs/imgs/managebookings.PNG)
 
   **Change Booking**:
 
-  ![Change Booking](https://github.com/dhardi/hoteljeri/blob/main/static/image/change_booking.PNG)
+  ![Change Booking](https://github.com/dhardi/hoteljeri/blob/main/docs/imgs/change_booking.PNG)
 
   **Delete Booking**:
 
-  ![Delete Booking](https://github.com/dhardi/hoteljeri/blob/main/static/image/deletebooking.PNG)
+  ![Delete Booking](https://github.com/dhardi/hoteljeri/blob/main/docs/imgs/deletebooking.PNG)
 
   **Message Not Logged**:
 
-  ![Not Logged](https://github.com/dhardi/hoteljeri/blob/main/static/image/notlogged.PNG)
+  ![Not Logged](https://github.com/dhardi/hoteljeri/blob/main/docs/imgs/notlogged.PNG)
 
   **Registration**:
 
-  ![Registration](https://github.com/dhardi/hoteljeri/blob/main/static/image/registration_form.PNG)
+  ![Registration](https://github.com/dhardi/hoteljeri/blob/main/docs/imgs/registration_form.PNG)
 
   **Sign in**:
 
-  ![Sign in](https://github.com/dhardi/hoteljeri/blob/main/static/image/logg_in.PNG)
+  ![Sign in](https://github.com/dhardi/hoteljeri/blob/main/docs/imgs/logg_in.PNG)
 
   **About Jeri**:
 
-  ![About Jeri](https://github.com/dhardi/hoteljeri/blob/main/static/image/about_jeri.PNG)
+  ![About Jeri](https://github.com/dhardi/hoteljeri/blob/main/docs/imgs/about_jeri.PNG)
 
  # Technologies Used 
 
