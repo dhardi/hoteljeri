@@ -226,7 +226,7 @@ Used for dividers and borders.
 
 ## DataBase Diagram 
 
-![DataBase](https://github.com/dhardi/hoteljeri/blob/main/docs/imgs/docs/imgs)
+![DataBase](https://github.com/dhardi/hoteljeri/blob/main/docs/imgs/database.PNG)
 **User Table**:
 - Fields: `id` (PK), ...
 - Relationship: One user can make many bookings.

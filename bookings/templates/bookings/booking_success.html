@@ -33,19 +33,38 @@
                         <button type="submit" class="btn btn-primary">Submit Review</button>
                     </form>
                     {% if messages %}
-                        <div class="mt-3">
-                            {% for message in messages %}
+                    <div class="mt-3" id="alert-container">
+                        {% for message in messages %}
+                            {% if forloop.last %}  <!-- just the last message -->
                                 <div class="alert {% if message.tags %}alert-{{ message.tags }}{% else %}alert-info{% endif %}" role="alert">
                                     {{ message }}
                                 </div>
-                            {% endfor %}
-                        </div>
-                    {% endif %}
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                {% endif %}
                 </div>
             </div>
         </div>
     </div>
 </div>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var alertContainer = document.getElementById('alert-container');
+        if (alertContainer) {
+            var alertMessage = alertContainer.querySelector('.alert:last-child');
+            if (alertMessage) {
+                // hidden others alerts messages 
+                var alertMessages = alertContainer.querySelectorAll('.alert');
+                alertMessages.forEach(function(message) {
+                    if (message !== alertMessage) {
+                        message.style.display = 'none';
+                    }
+                });
+            }
+        }
+    });
+</script>
 {% endblock %}
 
 
