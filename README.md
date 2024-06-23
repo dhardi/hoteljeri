@@ -257,7 +257,7 @@ Used for dividers and borders.
 
   **Reviews all custumers**:
 
-  ![Reviews](https://github.com/dhardi/hoteljeri/blob/main/docs/imgs/reviews.PNG)
+  ![Reviews](https://github.com/dhardi/hoteljeri/blob/main/docs/imgs/reviewslandpage.PNG)
 
    **Loggin Message**:
 
@@ -311,6 +311,7 @@ Used for dividers and borders.
 - **Heroku**: Used for hosting the deployed back-end site.
 - **Website Mockup Generator**: Used to create the mockup image used in my readme.
 - **Balsamiq**: Used to design my site wireframes.
+- **Images**: I was  took from Google Images and Local Hotels in Jeri
 
  
   # Deployment
