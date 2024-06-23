@@ -1,6 +1,6 @@
 # Hotel Jeri 
 
-![Responsive]()
+![Responsive](https://github.com/dhardi/hoteljeri/blob/main/static/image/responsive.PNG)
 
 [See live site ](https://hotel-jeri-cd0d2dfc201b.herokuapp.com/)
 
