@@ -257,7 +257,7 @@ Used for dividers and borders.
 
   **Reviews all custumers**:
 
-  ![Reviews](https://github.com/dhardi/hoteljeri/blob/main/docs/imgs/reviewslandpage.PNG)
+  ![Reviews](https://github.com/dhardi/hoteljeri/blob/main/docs/imgs/reviews.PNG)
 
    **Loggin Message**:
 
