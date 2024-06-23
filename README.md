@@ -313,6 +313,10 @@ Used for dividers and borders.
 - **Balsamiq**: Used to design my site wireframes.
 - **Images**: I was  took from Google Images and Local Hotels in Jeri
 
+[Images](https://www.tripadvisor.com/Hotels-g303297-Jericoacoara_Jijoca_de_Jericoacoara_State_of_Ceara-Hotels.html)
+
+[Hotel Images](https://www.agoda.com/essenza-hotel/hotel/jericoacoara-br.html?cid=1844104&ds=eHn4Ame7jb393seZ)
+
  
   # Deployment
 
