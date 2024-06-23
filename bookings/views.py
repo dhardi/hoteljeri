@@ -4,7 +4,7 @@ from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from .models import Room, Booking
 from rooms.models import Post
-from .forms import BookingForm, ReviewForm  
+from .forms import BookingForm, ReviewForm
 from django.core.exceptions import ValidationError
 
 

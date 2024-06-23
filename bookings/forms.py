@@ -17,11 +17,11 @@ class BookingForm(forms.ModelForm):
         if start_time and end_time:
             if start_time >= end_time:
                 raise ValidationError("End time must be after start time.")
-            
             # Ensure booking is at least one day
             if (end_time - start_time).days < 1:
-                raise ValidationError("The minimum booking duration is one day.")
-            
+                raise ValidationError(
+                    "The minimum booking duration is one day."
+                    )
             # Check for overlapping bookings
             overlapping_bookings = Booking.objects.filter(
                 room=room,
