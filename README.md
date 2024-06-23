@@ -128,7 +128,7 @@ These are crucial components necessary for the project's success. They form the 
 
 ### Bugs and Fix 
 
-At this date no Unfixed bugs
+Two JavaScript errors remain unresolved, but they do not affect the website's functionality.
 
 ## Future Features
 
